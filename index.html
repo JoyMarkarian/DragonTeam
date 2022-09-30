@@ -93,27 +93,53 @@
 
 
     <section class="contact">
-        <h3>Contact</h3>
-        <form method="POST" action="contact.html">
-            <div>
-                <label for="name"></label>
-                <input type="text" name="name" id="name" placeholder="Name"/>
+
+        <div class="form-wrapper">
+        <form id="form" method="post" name="postform" action="email.php">
+            <h2 class="form-title">Contact</h2>
+
+            <div class="form-input-grid">
+                <div>
+                    <p class="form-text">Nom*</p>
+                    <div class="form-input-wrapper flexbox-left">
+                        <input class="form-input" id="uname" name="uname" type="text" placeholder="Nom" aria-label="" required>
+                    </div>
+                </div>
+                
+                <div>
+                    <p class="form-text">Prénom*</p>
+                    <div class="form-input-wrapper flexbox-lef">
+                        <input class="form-input" id="pnom" type="text" placeholder="Prénom" aria-label=""required> 
+                    </div>
+                </div>
+            </div>    
+                
+            
+            <div class="form-input-max">
+                   <p class="form-text">Email*</p>
+                    <div class="form-input-wrapper flexbox-left">
+                        <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label=""required>
+                    </div>
+            </div>
+                
+                
+            <div class="form-input-max">
+                    <p class="form-text">Message*</p>
+                    <div id="textarea" class="form-input-wrapper flexbox-left-start">
+                    <textarea class="form-input" id="message" name="message" placeholder="Message" aria-label="" required ></textarea>
+                    </div> 
             </div>
             
-            <div>
-                <label for="email"></label> 
-                <input type="text" name="email" id="email" placeholder="Email"/>
-            </div>
             
-            <div>
-                <label for="message"></label>
-                <textarea name="message" id="message" cols="20" rows="10">Message</textarea>
-            </div>
-            <div>
-                <input type="submit" value="validate your message">
+            <div class="form-input-max flexbox-left">
+                <div class="button-wrapper">
+
+                    <button id="form-button" type="submit" class="button btn-primary">Envoyer></button>
+                </div>
             </div>
         </form>
-    </section>
+    </div>
+</section>
 
 
 
