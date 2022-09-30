@@ -13,13 +13,19 @@
         justify-content: center;
         
       }
-    }
+}
+body {
+  color:black;
+  background-color:white;
+  background-image:url(pictures/);
+  top: 0;
+  }
 /* Sidenav menu */
 .sidenav {
-    height: 50%;
+    height: 100%;
     width: 200px;
-    position: fixed;
-    z-index: 1;
+    position: absolute;
+    z-index: 10;
     top: 0;
     left: -250px;
     background-color: #e8e8e8;
@@ -28,60 +34,71 @@
   }
   
   .sidenav ul {
+    position: absolute;
+    top: 20%;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
   }
   
   /* Sidenav menu links */
+  @media screen and (max-width: 600px) {
   .sidenav a {
     padding: 8px 8px 8px 32px;
+    text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
     font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    margin: 15px;
     color: #818181;
     display: flex;
     transition: 0.3s;
     justify-content: space-around;
-    margin: auto;
   }
+}
   
-  .sidenav a:hover {
-    color: #111;
+   .sidenav a:hover {
+    color: rgb(163, 8, 8);
   }
   
   /* Active class */
-  .sidenav.active {
+   .sidenav.active {
     left: 0;
+    width: 50%;
   }
-  
   /* Close btn */
   .sidenav .close {
     position: absolute;
-    top: 0;
+    top: 0px;
     right: 25px;
     font-size: 36px;
+    z-index: 20;
+    margin-top: 7px;
   }
-  
+
+  .burger-icon {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 20;
+  }
+
   .burger-icon span {
-    display: block;
+    display: flex;
     width: 30px;
     height: 4px;
     background-color: black;
-    margin: 4px 0;
+    margin-top: 4px;
   }
-  
   nav h1 {
     display:flex;
     justify-content: center;
     width: auto;
     font-size: 2.5rem;
+    color: black;
 
 }
- a .openBtn {
-  display: flex;
-  justify-content: center;
-} 
-
 
 /*partie de Gaëtan*/
 

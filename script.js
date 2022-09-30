@@ -1,3 +1,4 @@
+/* Partie de Sylvain*/
 let sidenav = document.getElementById("mySidenav");
 let openBtn = document.getElementById("openBtn");
 let closeBtn = document.getElementById("closeBtn");
@@ -11,3 +12,19 @@ function openNav() {
 function closeNav() {
   sidenav.classList.remove("active");
 }
+/* Partie de Gaetan*/
+
+
+
+
+/* Partie de Sébastien*/
+
+
+
+
+/* Partie de Charlie*/
+
+
+
+
+/* Partie de Joy*/
