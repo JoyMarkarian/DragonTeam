@@ -20,8 +20,27 @@
 
 /*partie de Charlie*/
 
+.team-picture {
+  display: flex;
+  justify-content: center;
+}
 
+.team-picture1 {
+  max-width: 100%;
+  height: auto;
+}
 
+.nav-footer {
+  background-color: aliceblue;
+  padding: 20px 0 20px 0;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.nav-footer-text{
+  list-style: none;
+}
 
 
 
