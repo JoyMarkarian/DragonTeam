@@ -16,15 +16,18 @@
     justify-content: center;
     align-items: center;
 }
+
 #form {
     width: 75%;
 }
-form{
-    
+
+form {
+
     margin-top: 0em;
 }
-.form-tilte{
-    margin:1em 0 0 0;
+
+.form-tilte {
+    margin: 1em 0 0 0;
     font-weight: 800;
 }
 
@@ -32,7 +35,8 @@ form{
     margin: 0 0 1em 0;
     font-weight: 300;
 }
-h3{
+
+h3 {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -40,16 +44,17 @@ h3{
     margin-inline-end: 0px;
 }
 
-.form-text{
+.form-text {
     margin: 1em 0 0.75em 2.2em;
     font-weight: 300;
-    
+
 }
-.form-input-grid{
+
+.form-input-grid {
     margin: 1.5em 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap:1em ;
+    grid-column-gap: 1em;
 }
 
 .form-input-max {
@@ -60,9 +65,11 @@ h3{
     width: 100%;
     position: relative;
 }
+
 #textarea textarea {
     border-radius: 2.25em;
 }
+
 .form-input {
     width: 100%;
     padding: 1.2em 1.2em 1.2em 3.6em;
@@ -70,16 +77,17 @@ h3{
     box-shadow: 0 5px 20px 0 rgba(237, 232, 228, .8);
     background-color: rgb(149, 177, 255);
     transition: border .15s ease-in-out;
-    }
+}
+
 .form-input:hover {
-        border: 2px solid ;
+    border: 2px solid;
 }
 
 .form-input:focus {
-        outline: none;
-        border: 2px solid;
+    outline: none;
+    border: 2px solid;
 
-}  
+}
 
 #form-button {
     font-size: 1.22rem;
@@ -87,7 +95,8 @@ h3{
 
 
 
-.button, .btn-secondary {
+.button,
+.btn-secondary {
     margin: 0;
     width: 100%;
     position: relative;
@@ -95,41 +104,47 @@ h3{
     letter-spacing: .1em;
     text-align: center;
     background-size: 500%;
-     border-radius: 50px; 
-    border: none; cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
     transform: scaleX(1);
-    
+
 }
 
-.button, .button .btn-secondary {
+.button,
+.button .btn-secondary {
     background-position: 0 50%;
     bottom: 0;
 }
+
 .button .btn-secondary {
     left: 0;
     width: 100%;
     position: absolute;
     filter: blur(1rem);
-    opacity: .8; 
+    opacity: .8;
     z-index: -1;
     transform: scale3d(.9, .9, 1);
-    
+
 }
-.button:focus, .button:hover {
+
+.button:focus,
+.button:hover {
     transform: scale3d(1.1, 1.1, 1);
     background-position: 100% 50%;
     outline: none;
     bottom: 2px;
 }
 
-.button:focus .btn-secondary, .button:hover .btn-secondary {
+.button:focus .btn-secondary,
+.button:hover .btn-secondary {
     background-position: 100% 50%;
     filter: blur(1.6rem);
     bottom: -5px;
 }
 
 
-.flexbox-left{
+.flexbox-left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -139,7 +154,7 @@ h3{
 
 
 
- textarea{
+textarea {
     min-height: 10em;
     transition: opacity 15s ease-in-out;
     resize: none;
@@ -148,30 +163,32 @@ h3{
 }
 
 @media only screen and (max-width: 576px) {
+
     /* Form */
     .form-input-grid {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-column-gap: 0;
-    }}
-     
-     
-     
-        
+    }
+}
 
 
 
-       
+
+
+
+
+
 
 /* partie de Sylvain*/
 @media screen and (max-width: 600px) {
-      nav h1 {
+    nav h1 {
         max-width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
-        
-      }
+
+    }
 }
 
 /* Sidenav menu */
@@ -185,68 +202,70 @@ h3{
     background-color: #e8e8e8;
     padding-top: 60px;
     transition: left 0.5s ease;
-  }
-  
-  .sidenav ul {
+}
+
+.sidenav ul {
     position: absolute;
     top: 20%;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-  }
-  
-  /* Sidenav menu links */
-  @media screen and (max-width: 600px) {
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Oswald', sans-serif;
-    margin: 15px;
-    color: #818181;
-    display: flex;
-    transition: 0.3s;
-    justify-content: space-around;
-  }
 }
-  
-   .sidenav a:hover {
+
+/* Sidenav menu links */
+@media screen and (max-width: 600px) {
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Oswald', sans-serif;
+        margin: 15px;
+        color: #818181;
+        display: flex;
+        transition: 0.3s;
+        justify-content: space-around;
+    }
+}
+
+.sidenav a:hover {
     color: rgb(163, 8, 8);
-  }
-  
-  /* Active class */
-   .sidenav.active {
+}
+
+/* Active class */
+.sidenav.active {
     left: 0;
     width: 50%;
-  }
-  /* Close btn */
-  .sidenav .close {
+}
+
+/* Close btn */
+.sidenav .close {
     position: absolute;
     top: 0px;
     right: 25px;
     font-size: 36px;
     z-index: 20;
     margin-top: 7px;
-  }
+}
 
-  .burger-icon {
+.burger-icon {
     position: absolute;
     top: 20px;
     left: 10px;
     z-index: 20;
-  }
+}
 
-  .burger-icon span {
+.burger-icon span {
     display: flex;
     width: 30px;
     height: 4px;
     background-color: black;
     margin-top: 4px;
-  }
-  nav h1 {
-    display:flex;
+}
+
+nav h1 {
+    display: flex;
     justify-content: center;
     width: auto;
     font-size: 2.5rem;
@@ -269,16 +288,15 @@ body {
 
 #caroussel {
     display: flex;
-    /* align-items: center; */
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 30px 10px;
     font-family: 'DM Sans', sans-serif;
     transition: background .4s ease-in;
-    /* background-color: #c394f8; */
 
-    /* &.blue {
-        background-color: #428aa6;
-    } */
 }
 
 input[type=radio] {
@@ -288,7 +306,7 @@ input[type=radio] {
 .card {
     position: absolute;
     width: 60%;
-    height: 60%;
+    height: 90%;
     left: 0;
     right: 0;
     margin: auto;
@@ -310,7 +328,6 @@ input[type=radio] {
 
 .cards {
     position: relative;
-
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
@@ -353,87 +370,8 @@ img {
     opacity: 1;
     z-index: 1;
 
-    /* img {
-        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-    } */
 }
 
-/* .player {
-    background-color: #fff;
-    border-radius: 8px;
-    min-width: 320px;
-    padding: 16px 10px;
-}
-
-.upper-part {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-    height: 36px;
-    overflow: hidden;
-}
-
-.play-icon {
-    margin-right: 10px;
-} */
-
-/* .song-info {
-    width: calc(100% - 32px);
-    display: block;
-}
-
-.song-info .title {
-    color: #403d40;
-    font-size: 14px;
-    line-height: 24px;
-} */
-
-/* .sub-line {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-} */
-
-/* .subtitle,
-.time {
-    font-size: 12px;
-    line-height: 16px;
-    color: #c6c5c6;
-} */
-
-/* .time {
-    font-size: 12px;
-    line-height: 16px;
-    color: #a5a5a5;
-    font-weight: 500;
-    margin-left: auto;
-} */
-
-/* .progress-bar {
-    height: 3px;
-    width: 100%;
-    background-color: #e9efff;
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.progress {
-    display: block;
-    position: relative;
-    width: 60%;
-    height: 100%;
-    background-color: #2992dc;
-    border-radius: 6px;
-} */
-
-/* .info-area {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 30px;
-    transition: transform .4s ease-in;
-} */
 
 #item-1:checked~.player #test {
     transform: translateY(0);
@@ -486,47 +424,47 @@ img {
 /* Style 1ere section (H2, P, Image heros)  */
 
 .team-picture {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .team-picture-div {
-  display: block;
-  width: 100%;
-  opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    display: block;
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .team-picture-img {
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  background-position: center;
-  background-size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
 }
 
 .team-picture-div:hover {
-  opacity: .7;
+    opacity: .7;
 }
 
 
 /* Style fotter */
 
 .nav-footer {
-  background-color: aliceblue;
-  padding: 20px 0 20px 0;
-  width:100%;
-  /* position: absolute; */
-  bottom: 0;
+    background-color: aliceblue;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    /* position: absolute; */
+    bottom: 0;
 }
 
-.nav-footer-text{
-  list-style: none;
+.nav-footer-text {
+    list-style: none;
 }
 
 .nav-footer a:hover {
-  color: gold;
+    color: gold;
 }
 
 

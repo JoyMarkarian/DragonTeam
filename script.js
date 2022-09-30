@@ -15,10 +15,10 @@ openBtn.onclick = openNav;
 closeBtn.onclick = closeNav;
 
 function openNav() {
-  sidenav.classList.add("active");
+    sidenav.classList.add("active");
 }
 function closeNav() {
-  sidenav.classList.remove("active");
+    sidenav.classList.remove("active");
 }
 /* Partie de Gaetan*/
 
@@ -32,9 +32,7 @@ function closeNav() {
 
 
 // partie de gaëtan
-// $('input').on('change', function () {
-//     $('body').toggleClass('blue');
-// });
+
 
 const personnage = [
     {
@@ -121,14 +119,14 @@ function selectImgperso(carditem) {
 
 // const button = document.getElementById("form-button");
 // button.addEventListener("submit", function(event){
-    const message =
-    "Thank you for submitting your request. The.";   
+const message =
+    "Thank you for submitting your request. The.";
 
 document
     .getElementById("form")
     .addEventListener("submit", function (event) {
-      event.preventDefault();
-      alert(message);
+        event.preventDefault();
+        alert(message);
     });
 
 /* Partie de Joy*/
