@@ -23,11 +23,100 @@ form div > input, form div > textarea{
 }
 
 /* partie de Sylvain*/
+@media screen and (max-width: 600px) {
+      nav h1 {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        
+      }
+}
+body {
+  color:black;
+  background-color:white;
+  background-image:url(pictures/);
+  top: 0;
+  }
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  
+  .sidenav ul {
+    position: absolute;
+    top: 20%;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  /* Sidenav menu links */
+  @media screen and (max-width: 600px) {
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    margin: 15px;
+    color: #818181;
+    display: flex;
+    transition: 0.3s;
+    justify-content: space-around;
+  }
+}
+  
+   .sidenav a:hover {
+    color: rgb(163, 8, 8);
+  }
+  
+  /* Active class */
+   .sidenav.active {
+    left: 0;
+    width: 50%;
+  }
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    z-index: 20;
+    margin-top: 7px;
+  }
 
+  .burger-icon {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 20;
+  }
 
+  .burger-icon span {
+    display: flex;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin-top: 4px;
+  }
+  nav h1 {
+    display:flex;
+    justify-content: center;
+    width: auto;
+    font-size: 2.5rem;
+    color: black;
 
-
-
+}
 
 /*partie de Gaëtan*/
 
