@@ -11,22 +11,57 @@
 
 <body onload="selectImg(0)">
     <header>
+        
         <nav>
-            <div>
-
+            <h1 id="myLogo" class="logo">Notre Logo</h1>
+            <div id="mySidenav" class="sidenav">
+                    <a id="closeBtn" href="#" class="close">&times;
+                    </a>
+                    <ul>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Son Goku</a></li>
+                      <li><a href="#">Vegeta</a></li>
+                      <li><a href="#">Trunks</a></li>
+                      <li><a href="#">Bulma</a></li>
+                      <li><a href="#">Gohan</a></li>
+                    </ul>
+                    
             </div>
+                <a href="#" id="openBtn">
+                      <span class="burger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </span>
+                </a>  
+                  
         </nav>
     </header>
 
     <section class="team">
-        <div>
-            <h1></h1>
-            <p></p>
+        <div class="team-text">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa in iure rerum libero quo nam corporis
+                sapiente officia soluta laboriosam iste, quisquam asperiores hic, odio ipsum consequuntur doloribus!
+                Nihil, quas.</p>
         </div>
-        <div>
-
+        <div class="team-picture">
+            <div class="team-picture-div"><a href="/gohan.html">
+                    <img class="team-picture-img" src="/img/chat-beau.jpg" alt="gohan">
+                </a></div>
+            <div class="team-picture-div"><a href="/trunks.html">
+                    <img class="team-picture-img" src="/img/chat-beau-2.jpg" alt="trunks">
+                </a></div>
+            <div class="team-picture-div"><a href="/bulma.html">
+                    <img class="team-picture-img" src="/img/chat-beau.jpg" alt="bulma">
+                </a></div>
+            <div class="team-picture-div"><a href="/son_goku.html">
+                    <img class="team-picture-img" src="/img/chat-beau-2.jpg" alt="son_goku">
+                </a></div>
+            <div class="team-picture-div"><a href="/vegeta.html">
+                    <img class="team-picture-img" src="/img/chat-beau.jpg" alt="vegeta">
+                </a></div>
         </div>
-    </section>
 
     <section class="skills">
         <div>
@@ -106,15 +141,93 @@
         <!-- </div> -->
     </section>
 
+        <section class="skills">
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div>
+
+            </div>
+        </section>
+
+        <section class="contact">
+            <form action=""></form>
+        </section>
+
+        <footer>
+            <div class="nav-footer">
+                <h2><a href="/about_us.html">À propos</a></h2>
+                <h2>Les personnages</h2>
+                <ul class="nav-footer-text">
+                    <li><a href="/bulma.html">Bulma</a></li>
+                    <li><a href="/gohan.html">Gohan</a></li>
+                    <li><a href="/son_goku.html">Son Goku</a></li>
+                    <li><a href="/trunks.html">Trunks</a></li>
+                    <li><a href="/vegeta.html">Vegeta</a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+
     <section class="contact">
-        <form action=""></form>
-    </section>
+
+        <div class="form-wrapper">
+        <form id="form" method="post" name="postform" action="email.php">
+            <h2 class="form-title">Contact</h2>
+
+            <div class="form-input-grid">
+                <div>
+                    <p class="form-text">Nom*</p>
+                    <div class="form-input-wrapper flexbox-left">
+                        <input class="form-input" id="uname" name="uname" type="text" placeholder="Nom" aria-label="" required>
+                    </div>
+                </div>
+                
+                <div>
+                    <p class="form-text">Prénom*</p>
+                    <div class="form-input-wrapper flexbox-lef">
+                        <input class="form-input" id="pnom" type="text" placeholder="Prénom" aria-label=""required> 
+                    </div>
+                </div>
+            </div>    
+                
+            
+            <div class="form-input-max">
+                   <p class="form-text">Email*</p>
+                    <div class="form-input-wrapper flexbox-left">
+                        <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label=""required>
+                    </div>
+            </div>
+                
+                
+            <div class="form-input-max">
+                    <p class="form-text">Message*</p>
+                    <div id="textarea" class="form-input-wrapper flexbox-left-start">
+                    <textarea class="form-input" id="message" name="message" placeholder="Message" aria-label="" required ></textarea>
+                    </div> 
+            </div>
+            
+            
+            <div class="form-input-max flexbox-left">
+                <div class="button-wrapper">
+
+                    <button id="form-button" type="submit" class="button btn-primary">Envoyer></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
 
     <footer>
 
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>

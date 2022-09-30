@@ -1,15 +1,263 @@
+* {
+    box-sizing: border-box;
+
+}
+
+
 /**partie de Sebastien*/
+section.contact{
+    min-height: 100vh;
+}
+
+
+.form-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form {
+    width: 75%;
+}
+form{
+    
+    margin-top: 0em;
+}
+.form-tilte{
+    margin:1em 0 0 0;
+    font-weight: 800;
+}
+
+.form-undertitle {
+    margin: 0 0 1em 0;
+    font-weight: 300;
+}
+h3{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.form-text{
+    margin: 1em 0 0.75em 2.2em;
+    font-weight: 300;
+    
+}
+.form-input-grid{
+    margin: 1.5em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:1em ;
+}
+
+.form-input-max {
+    margin: 1.5em 0;
+}
+
+.form-input-wrapper {
+    width: 100%;
+    position: relative;
+}
+#textarea textarea {
+    border-radius: 2.25em;
+}
+.form-input {
+    width: 100%;
+    padding: 1.2em 1.2em 1.2em 3.6em;
+    border-radius: 5em;
+    box-shadow: 0 5px 20px 0 rgba(237, 232, 228, .8);
+    background-color: rgb(149, 177, 255);
+    transition: border .15s ease-in-out;
+    }
+.form-input:hover {
+        border: 2px solid ;
+}
+
+.form-input:focus {
+        outline: none;
+        border: 2px solid;
+
+}  
+
+#form-button {
+    font-size: 1.22rem;
+}
+
+
+
+.button, .btn-secondary {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    padding: 1.1em 1.8em;
+    letter-spacing: .1em;
+    text-align: center;
+    background-size: 500%;
+     border-radius: 50px; 
+    border: none; cursor: pointer;
+    transform: scaleX(1);
+    
+}
+
+.button, .button .btn-secondary {
+    background-position: 0 50%;
+    bottom: 0;
+}
+.button .btn-secondary {
+    left: 0;
+    width: 100%;
+    position: absolute;
+    filter: blur(1rem);
+    opacity: .8; 
+    z-index: -1;
+    transform: scale3d(.9, .9, 1);
+    
+}
+.button:focus, .button:hover {
+    transform: scale3d(1.1, 1.1, 1);
+    background-position: 100% 50%;
+    outline: none;
+    bottom: 2px;
+}
+
+.button:focus .btn-secondary, .button:hover .btn-secondary {
+    background-position: 100% 50%;
+    filter: blur(1.6rem);
+    bottom: -5px;
+}
+
+
+.flexbox-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 
 
 
+
+ textarea{
+    min-height: 10em;
+    transition: opacity 15s ease-in-out;
+    resize: none;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 576px) {
+    /* Form */
+    .form-input-grid {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 0;
+    }}
+     
+     
+     
+        
+
+
+
+       
 
 /* partie de Sylvain*/
+@media screen and (max-width: 600px) {
+      nav h1 {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        
+      }
+}
+body {
+  color:black;
+  background-color:white;
+  background-image:url(pictures/);
+  top: 0;
+  }
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  
+  .sidenav ul {
+    position: absolute;
+    top: 20%;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  /* Sidenav menu links */
+  @media screen and (max-width: 600px) {
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    margin: 15px;
+    color: #818181;
+    display: flex;
+    transition: 0.3s;
+    justify-content: space-around;
+  }
+}
+  
+   .sidenav a:hover {
+    color: rgb(163, 8, 8);
+  }
+  
+  /* Active class */
+   .sidenav.active {
+    left: 0;
+    width: 50%;
+  }
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    z-index: 20;
+    margin-top: 7px;
+  }
 
+  .burger-icon {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 20;
+  }
 
+  .burger-icon span {
+    display: flex;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin-top: 4px;
+  }
+  nav h1 {
+    display:flex;
+    justify-content: center;
+    width: auto;
+    font-size: 2.5rem;
+    color: black;
 
-
-
+}
 
 /*partie de Gaëtan*/
 * {
@@ -240,8 +488,51 @@ img {
 
 /*partie de Charlie*/
 
+/* Style 1ere section (H2, P, Image heros)  */
+
+.team-picture {
+  display: flex;
+  justify-content: center;
+}
+
+.team-picture-div {
+  display: block;
+  width: 100%;
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.team-picture-img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.team-picture-div:hover {
+  opacity: .7;
+}
 
 
+/* Style fotter */
+
+.nav-footer {
+  background-color: aliceblue;
+  padding: 20px 0 20px 0;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.nav-footer-text{
+  list-style: none;
+}
+
+.nav-footer a:hover {
+  color: gold;
+}
 
 
 
