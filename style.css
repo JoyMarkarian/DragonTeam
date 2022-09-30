@@ -5,9 +5,9 @@
 
 
 /**partie de Sebastien*/
-section.contact{
+/* section.contact{
     min-height: 100vh;
-}
+} */
 
 
 .form-wrapper {
@@ -173,12 +173,7 @@ h3{
         
       }
 }
-body {
-  color:black;
-  background-color:white;
-  background-image:url(pictures/);
-  top: 0;
-  }
+
 /* Sidenav menu */
 .sidenav {
     height: 100%;
@@ -264,15 +259,15 @@ body {
     box-sizing: border-box;
 }
 
-html,
+/* html,
 body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-}
+} */
 
-body {
+#caroussel {
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -522,7 +517,7 @@ img {
   background-color: aliceblue;
   padding: 20px 0 20px 0;
   width:100%;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }
 
