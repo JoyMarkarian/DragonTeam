@@ -20,15 +20,35 @@
 
 /*partie de Charlie*/
 
+/* Style 1ere section (H2, P, Image heros)  */
+
 .team-picture {
   display: flex;
   justify-content: center;
 }
 
-.team-picture1 {
-  max-width: 100%;
-  height: auto;
+.team-picture-div {
+  display: block;
+  width: 100%;
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
+
+.team-picture-img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.team-picture-div:hover {
+  opacity: .7;
+}
+
+
+/* Style fotter */
 
 .nav-footer {
   background-color: aliceblue;
@@ -40,6 +60,10 @@
 
 .nav-footer-text{
   list-style: none;
+}
+
+.nav-footer a:hover {
+  color: gold;
 }
 
 
