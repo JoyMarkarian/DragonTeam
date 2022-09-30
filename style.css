@@ -1,26 +1,168 @@
+* {
+    box-sizing: border-box;
+
+}
+
+
 /**partie de Sebastien*/
-form div{
+section.contact{
+    min-height: 100vh;
+}
+
+
+.form-wrapper {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    min-height: 83px;
-    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
 }
-
-form div > label {
-    margin-bottom: 7px;
-    font-weight: 600;
+#form {
+    width: 75%;
 }
-
-form div > input, form div > textarea{
-    background-color: darkgrey;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
+form{
+    
+    margin-top: 0em;
+}
+.form-tilte{
+    margin:1em 0 0 0;
     font-weight: 800;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-shadow: 0px 2px 2px 0px;
 }
+
+.form-undertitle {
+    margin: 0 0 1em 0;
+    font-weight: 300;
+}
+h3{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.form-text{
+    margin: 1em 0 0.75em 2.2em;
+    font-weight: 300;
+    
+}
+.form-input-grid{
+    margin: 1.5em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:1em ;
+}
+
+.form-input-max {
+    margin: 1.5em 0;
+}
+
+.form-input-wrapper {
+    width: 100%;
+    position: relative;
+}
+#textarea textarea {
+    border-radius: 2.25em;
+}
+.form-input {
+    width: 100%;
+    padding: 1.2em 1.2em 1.2em 3.6em;
+    border-radius: 5em;
+    box-shadow: 0 5px 20px 0 rgba(237, 232, 228, .8);
+    background-color: rgb(149, 177, 255);
+    transition: border .15s ease-in-out;
+    }
+.form-input:hover {
+        border: 2px solid ;
+}
+
+.form-input:focus {
+        outline: none;
+        border: 2px solid;
+
+}  
+
+#form-button {
+    font-size: 1.22rem;
+}
+
+
+
+.button, .btn-secondary {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    padding: 1.1em 1.8em;
+    letter-spacing: .1em;
+    text-align: center;
+    background-size: 500%;
+     border-radius: 50px; 
+    border: none; cursor: pointer;
+    transform: scaleX(1);
+    
+}
+
+.button, .button .btn-secondary {
+    background-position: 0 50%;
+    bottom: 0;
+}
+.button .btn-secondary {
+    left: 0;
+    width: 100%;
+    position: absolute;
+    filter: blur(1rem);
+    opacity: .8; 
+    z-index: -1;
+    transform: scale3d(.9, .9, 1);
+    
+}
+.button:focus, .button:hover {
+    transform: scale3d(1.1, 1.1, 1);
+    background-position: 100% 50%;
+    outline: none;
+    bottom: 2px;
+}
+
+.button:focus .btn-secondary, .button:hover .btn-secondary {
+    background-position: 100% 50%;
+    filter: blur(1.6rem);
+    bottom: -5px;
+}
+
+
+.flexbox-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+
+ textarea{
+    min-height: 10em;
+    transition: opacity 15s ease-in-out;
+    resize: none;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 576px) {
+    /* Form */
+    .form-input-grid {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 0;
+    }}
+     
+     
+     
+        #form-button{
+
+
+
+
+     }   
 
 /* partie de Sylvain*/
 
