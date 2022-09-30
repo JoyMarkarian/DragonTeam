@@ -1,3 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// partie de gaëtan
 // $('input').on('change', function () {
 //     $('body').toggleClass('blue');
 // });
@@ -28,6 +43,10 @@ const personnage = [
 function selectImg(carditem) {
     const info = document.getElementById("titre");
     info.innerText = personnage[carditem].name;
+    const message = document.getElementById("msg");
+    message.innerText = personnage[carditem].capacity;
+}
+function selectImgperso(carditem) {
     const message = document.getElementById("msg");
     message.innerText = personnage[carditem].capacity;
 }
