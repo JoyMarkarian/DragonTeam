@@ -32,45 +32,64 @@ function closeNav() {
 
 
 // partie de gaëtan
+const competencePersonnage = [
+    {
+        nameCompetence: "Fusion",
+        competence: "La technique de fusion est la plus célèbre de Dragon Ball. Il s'agit d'une technique venant d'un peuple nommé Metamors. Son Gokû l'a apprise lorsqu'il était au royaume des morts entre la saga de Cell et la saga de Majin Boo."
+    },
+    {
+        nameCompetence: "competence 2",
+        competence: "Déscriptiggggggg gggggggg ggggggg gggggggggggggg ggggggggggggg ggggggggggg ggg ggggggg gggggon de la competence 2"
+    },
+    {
+        nameCompetence: "competence 3",
+        competence: "Déscription de la competence 3"
+    },
+    {
+        nameCompetence: "competence 4",
+        competence: "Déscription de la competence 4"
+    },
+    {
+        nameCompetence: "competence 5",
+        competence: "Déscription de la competence 5"
+    },
 
+]
 
-const personnage = [
+const arene = [
     {
-        name: "Joy",
-        capacity: "Bulma (ブルマ, Buruma?) est un personnage de fiction créé par Akira Toriyama dans le manga Dragon Ball en 1984. Né le 19 août, elle apparaît pour la première fois le 20 novembre 1984 dans le premier épisode de Dragon Ball, publié dans Weekly Shōnen Jump. Elle y fait la rencontre du héros Goku et le recrute comme garde du corps pour voyager et partir à la quête des Dragon Balls en vue de réaliser ses vœux.Elle se mariera plus tard avec le Prince Vegeta, qui était d’abord son ennemi, mais qui deviendra plus tard son mari. Elle aura un fils avec lui, nommé Trunks, et une petite fille du nom de Bra"
-        // capacity: "dfbsqdbfqsdkgblZSBBzishfbvIZHDFGBV"
+        name: "Désert de Yamcha (jour, soir, nuit)",
+        capacity: "Texte sur Désert de Yamcha (jour, soir, nuit)"
     },
     {
-        name: "Gaëtan",
-        capacity: "Son Gohan (孫悟飯, Son Gohan?), également appelé Sangohan, dans la version française de l'anime, est un personnage de fiction du manga Dragon Ball créé par Akira Toriyama. Il apparaît pour la première fois dans le magazine Weekly Shōnen Jump, le 24 octobre 1988"
-        // capacity: "dfbsqdbfqsdkgblZSBHGKZSGBskgbZBGFQSHJGBlzhefbvIHQFVBzishfbvIZHDFGBV"
+        name: "Namek (planète, agonisant)",
+        capacity: "La Planète Namek (ナメック星, Namekkusei) est une planète d'un système solaire éloigné. Elle est la planète d'origine du Tout-Puissant, de Piccolo Daimaô, ainsi que de Dende et des autres nameks connus. Namek a été détruite par Freezer au cours de son combat avec Son Goku. Le peuple namek a ensuite été relogé sur une nouvelle planète Namek, après avoir été hébergé sur Terre pendant près d'un an."
     },
     {
-        name: "Sylvain",
-        capacity: "Son Goku (孫悟空, Son Gokū?, anciennement orthographié Sangoku et Son Gokû), de son nom de naissance Kakarot (カカロット, Kakarotto?), est un personnage de fiction japonais créé par Akira Toriyama et le principal héros du manga Dragon Ball. Il apparaît pour la première fois le 20 novembre 1984 dans le Weekly Shōnen Jump. Le personnage s'inspire de Sun Wukong et Superman[réf. nécessaire], en raison de son histoire d'origine très similaire."
-        // capacity: "dfbsqdbfqsdkgblZSBHGKZSGBskgbZBGFQSHJGBlzhefbvIHQFVBzishfbvIZHDFGBV"
+        name: "Capital City (ville, en ruines)",
+        capacity: "La Capitale de l'Ouest (西の都, Nishi no Miyako) est l'une des villes majeures de la Terre, située le long de la côte ouest de son continent principal. Il est remarquable dans la série que la ville natale de Bulma est le siège de Capsule Corporation."
     },
     {
-        name: "Charlie",
-        capacity: "Trunks (トランクス, Torankusu?) né le 12 octobre, Trunks est un personnage de fiction créé par Akira Toriyama dans le manga Dragon Ball en 1984. Ce personnage a la particularité d'exister deux fois dans l'histoire. En effet, le premier Trunks qui apparaît au début de la saga des cyborgs vient du futur et a remonté le temps grâce à une machine spéciale conçue par Bulma. Ce n'est que quelques années plus tard qu'il naît réellement. Dans la suite de l'article, on distingue donc « Trunks du présent » et « Trunks du futur »"
-        // capacity: "dfbsqdbfqsdkgblZSBHGKZSGBskgbZBGFQSHJGBlzhefbvIHQFVBzishfbvIZHDFGBV"
+        name: "Terre dévastée",
+        capacity: "Texte sur l'arene Terre dévastée"
     },
     {
-        name: "Sebastien",
-        capacity: "Vegeta (ベジータ, Bejīta?), également orthographié Végéta, est un personnage de fiction du manga Dragon Ball créé par Akira Toriyama. Il apparaît pour la première fois le 19 décembre 1988 dans le Weekly Shōnen Jump, recherchant les Dragon Balls réalisant des vœux pour obtenir l'immortalité. Aux côtés de Goku, Gohan, Bulma, Krillin et Piccolo, il est un des personnages ayant reçu le plus de développement. Son personnage évolue de méchant à anti-héros et devient un héros au cours de la série. Il est l'un des personnages les plus populaires de la franchise Dragon Ball, et sa première confrontation avec Goku est considérée comme l'une des batailles les plus emblématiques du manga et de l'anime"
-        // capacity: "dfbsqdbfqsdkgblZSBHGKZSGBskgbZBGFQSHJGBlzhefbvIHQFVBzishfbvIZHDFGBV"
+        name: "Mont Paozu",
+        capacity: "Le mont Paozu (パオズ山, Paozu yama) est la montagne dans laquelle vit Son Goku et son grand-père Son Gohan."
     },
 
 ]
 function selectImg(carditem) {
     const info = document.getElementById("titre");
-    info.innerText = personnage[carditem].name;
+    info.innerText = arene[carditem].name;
     const message = document.getElementById("msg");
-    message.innerText = personnage[carditem].capacity;
+    message.innerText = arene[carditem].capacity;
 }
-function selectImgperso(carditem) {
-    const message = document.getElementById("msg");
-    message.innerText = personnage[carditem].capacity;
+function selectImgCompetence(carditem) {
+    const perso = document.getElementById("nameCompetence");
+    perso.innerText = `Compétence : ${competencePersonnage[carditem].nameCompetence}`;
+    const message = document.getElementById("msgCompetence");
+    message.innerText = competencePersonnage[carditem].competence;
 }
 
 /* Partie de Sébastien*/
