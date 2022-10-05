@@ -7,18 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&family=Oswald:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
 </head>
 
 <body onload="selectImg(0)">
-    <header>
-
+    <header class="header-page">
+        <img class="header-picture" src="/pictures/home.png" alt="maison">
         <nav>
-            <h1 id="myLogo" class="logo">Notre Logo</h1>
+            <h1 id="myLogo" class="logo">Notre Logo1</h1>
             <div id="mySidenav" class="sidenav">
+                <h1 id="myLogo-nav-burger">Notre Logo2</h1>
+                <hr />
                 <a id="closeBtn" href="#" class="close">&times;
                 </a>
-                <ul>
-                    <li><a href="#">About us</a></li>
+                <ul class="text-nav-open">
+                    <li>
+                        <h2><a href="/about_us.html">À PROPOS</a></h2>
+                    </li>
+                    <hr class="trait-nav" />
+                    <h2> PERSONNAGES</h2>
                     <li><a href="#">Son Goku</a></li>
                     <li><a href="#">Vegeta</a></li>
                     <li><a href="#">Trunks</a></li>
@@ -34,7 +47,6 @@
                     <span></span>
                 </span>
             </a>
-
         </nav>
     </header>
 
@@ -46,26 +58,29 @@
                 Nihil, quas.</p>
         </div>
         <div class="team-picture">
-            <div class="team-picture-div"><a href="/gohan.html">
-                    <img class="team-picture-img" src="/img/chat-beau.jpg" alt="gohan">
+            <div class="team-picture-div"><a href="/trucks.html">
+                    <img class="team-picture-img" src="/pictures/Truck.png" alt="trunks">
                 </a></div>
-            <div class="team-picture-div"><a href="/trunks.html">
-                    <img class="team-picture-img" src="/img/chat-beau-2.jpg" alt="trunks">
+            <div class="team-picture-div"><a href="/gohan.html">
+                    <img class="team-picture-img" src="/pictures/d3l2qbm-656a49a3-a75b-4b4b-a059-6c01490eadfa.png"
+                        alt="gohan">
                 </a></div>
             <div class="team-picture-div"><a href="/bulma.html">
-                    <img class="team-picture-img" src="/img/chat-beau.jpg" alt="bulma">
+                    <img class="team-picture-img" src="/pictures/Dragon-Ball-character-Bulma-657x1024.png" alt="bulma">
                 </a></div>
             <div class="team-picture-div"><a href="/son_goku.html">
-                    <img class="team-picture-img" src="/img/chat-beau-2.jpg" alt="son_goku">
+                    <img class="team-picture-img" src="/pictures/goku.webp" alt="son_goku">
                 </a></div>
             <div class="team-picture-div"><a href="/vegeta.html">
-                    <img class="team-picture-img" src="/img/chat-beau.jpg" alt="vegeta">
+                    <img class="team-picture-img"
+                        src="/pictures/png-transparent-dragonball-z-vegeta-illustration-vegeta-majin-buu-goku-frieza-bulma-vegeta-fictional-characters-baby-trunks-thumbnail-removebg-preview.png"
+                        alt="vegeta">
                 </a></div>
         </div>
     </section>
 
     <section class="skills" id="caroussel">
-        <div>
+        <div class="container-picture">
             <h1 classe="titre" id="titre"></h1>
             <p class="msg" id="msg"></p>
         </div>
@@ -147,16 +162,28 @@
 
     <footer>
         <div class="nav-footer">
-            <h2><a href="/about_us.html">À propos</a></h2>
-            <h2>Les personnages</h2>
-            <ul class="nav-footer-text">
-                <li><a href="/bulma.html">Bulma</a></li>
-                <li><a href="/gohan.html">Gohan</a></li>
-                <li><a href="/son_goku.html">Son Goku</a></li>
-                <li><a href="/trunks.html">Trunks</a></li>
-                <li><a href="/vegeta.html">Vegeta</a></li>
-            </ul>
-        </div>
+            <div class="nav-footer-perso">
+                <h2><a href="/about_us.html">À propos</a></h2>
+                <hr />
+                <h2>Les personnages</h2>
+                <ul class="nav-footer-text">
+                    <li><a href="/bulma.html">Bulma</a></li>
+                    <li><a href="/gohan.html">Gohan</a></li>
+                    <li><a href="/son_goku.html">Son Goku</a></li>
+                    <li><a href="/trunks.html">Trunks</a></li>
+                    <li><a href="/vegeta.html">Vegeta</a></li>
+                </ul>
+            </div>
+            <div class="nav-footer-perso">
+                <h2>Les partenaires</h2>
+                <ul class="nav-footer-text">
+                    <li><a href="/bulma.html">Site 1</a></li>
+                    <li><a href="/gohan.html">Site 2</a></li>
+                    <li><a href="/son_goku.html">Site 3</a></li>
+                    <li><a href="/trunks.html">Site 4</a></li>
+                    <li><a href="/vegeta.html">Site 5</a></li>
+                </ul>
+            </div>
     </footer>
 
     <script src="script.js"></script>
