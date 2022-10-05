@@ -5,10 +5,6 @@
 
 
 /**partie de Sebastien*/
-/* section.contact{
-    min-height: 100vh;
-} */
-
 
 .form-wrapper {
     width: 100%;
@@ -21,32 +17,17 @@
     width: 75%;
 }
 
-form {
-
-    margin-top: 0em;
-}
 
 .form-tilte {
     margin: 1em 0 0 0;
     font-weight: 800;
+    color: red;
 }
 
-.form-undertitle {
-    margin: 0 0 1em 0;
-    font-weight: 300;
-}
-
-h3 {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
 
 .form-text {
     margin: 1em 0 0.75em 2.2em;
-    font-weight: 300;
+    font-weight: 800;
 
 }
 
@@ -61,11 +42,6 @@ h3 {
     margin: 1.5em 0;
 }
 
-.form-input-wrapper {
-    width: 100%;
-    position: relative;
-}
-
 #textarea textarea {
     border-radius: 2.25em;
 }
@@ -74,57 +50,33 @@ h3 {
     width: 100%;
     padding: 1.2em 1.2em 1.2em 3.6em;
     border-radius: 5em;
-    box-shadow: 0 5px 20px 0 rgba(237, 232, 228, .8);
+    box-shadow: 15px 0px 20px 0 rgba(3, 15, 104, .8);
     background-color: rgb(149, 177, 255);
-    transition: border .15s ease-in-out;
+    border: none;
 }
 
 .form-input:hover {
     border: 2px solid;
 }
 
-.form-input:focus {
-    outline: none;
-    border: 2px solid;
-
-}
-
 #form-button {
     font-size: 1.22rem;
+    background-color: rgb(149, 177, 255);
+    box-shadow: 15px 0px 20px 0 rgba(3, 15, 104, .8);
 }
 
 
 
 .button,
 .btn-secondary {
-    margin: 0;
+
     width: 100%;
     position: relative;
     padding: 1.1em 1.8em;
     letter-spacing: .1em;
-    text-align: center;
-    background-size: 500%;
-    border-radius: 50px;
+    border-radius: 30px;
     border: none;
     cursor: pointer;
-    transform: scaleX(1);
-
-}
-
-.button,
-.button .btn-secondary {
-    background-position: 0 50%;
-    bottom: 0;
-}
-
-.button .btn-secondary {
-    left: 0;
-    width: 100%;
-    position: absolute;
-    filter: blur(1rem);
-    opacity: .8;
-    z-index: -1;
-    transform: scale3d(.9, .9, 1);
 
 }
 
@@ -136,30 +88,11 @@ h3 {
     bottom: 2px;
 }
 
-.button:focus .btn-secondary,
-.button:hover .btn-secondary {
-    background-position: 100% 50%;
-    filter: blur(1.6rem);
-    bottom: -5px;
-}
-
-
-.flexbox-left {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-
-
 
 textarea {
     min-height: 10em;
     transition: opacity 15s ease-in-out;
-    resize: none;
     background-color: cornflowerblue;
-    border-radius: 5px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -274,22 +207,14 @@ nav h1 {
 }
 
 /*partie de Gaëtan*/
-* {
-    box-sizing: border-box;
-}
 
-/* html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-} */
+
 
 #caroussel {
     display: flex;
     width: 100%;
     height: 60vh;
+    /*régler height pour voir plus ou moins le carrousel */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -315,12 +240,12 @@ input[type=radio] {
 }
 
 .container {
+    display: flex;
     width: 100%;
     max-width: 400px;
     max-height: 400px;
     height: 100%;
     transform-style: preserve-3d;
-    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -333,7 +258,7 @@ input[type=radio] {
     margin-bottom: 20px;
 }
 
-img {
+.imgArene {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -393,31 +318,76 @@ img {
     transform: translateY(-0px);
 }
 
-.skills>div>p {
-    height: 150px;
+.msg {
+    height: 100px;
     overflow: scroll;
+}
+
+/* fiche personnage */
+.presentationPersonnage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.namePersonnage {
+    text-align: center;
+}
+
+.msgPersonnage {
+    /* height: 100px;
+    overflow: scroll; */
+    width: 100%;
+    padding: 1rem;
+}
+
+.nameCompetence {
+    text-align: left;
+
+}
+
+/* .msgCompetence {
+    height: 100px;
+    overflow: scroll;
+} */
+
+.imgCompetence {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: fill;
+    /*permet de définir si la photo est entierement dans la card */
+}
+
+#carousselPersonnage {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    /*régler height pour voir plus ou moins le carrousel */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    font-family: 'DM Sans', sans-serif;
+    transition: background .4s ease-in;
+
 }
 
 .photo>img {
     width: 100%;
     height: 100%;
-    clip-path: ellipse(35% 40%);
+    clip-path: ellipse(60% 38%);
     /* clip-path pour jouer sur le rond ou oval */
-    /* padding-bottom: 2rem; */
+    padding-bottom: 2rem;
 }
 
 .photo {
-    height: 40%;
-}
-
-.character>div>h1 {
+    width: 10rem;
+    height: 60%;
     text-align: center;
 }
 
-.character>div>p {
-    height: 150px;
-    overflow: scroll;
-}
 
 /*partie de Charlie*/
 
