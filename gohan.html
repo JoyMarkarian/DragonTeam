@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gohan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bodyCharacter" onload="selectImgCompetence(0)">
+    <header class="headerGohan" id="headerGohan">
+        <nav>
+            <h1 id="myLogo" class="logo">Notre Logo</h1>
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">&times;
+                </a>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Son Goku</a></li>
+                    <li><a href="#">Vegeta</a></li>
+                    <li><a href="#">Trunks</a></li>
+                    <li><a href="#">Bulma</a></li>
+                    <li><a href="#">Gohan</a></li>
+                </ul>
+
+            </div>
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+
+        </nav>
+    </header>
+    <section class="presentationPersonnage" id="presentationPersonnage">
+        <div>
+            <h1 classe="namePersonnage" id="namePersonnage">Son Gohan</h1>
+
+        </div>
+        <div class="photo">
+            <img src="src/gohan.jpg" alt="gohan">
+        </div>
+        <div class="charactGohan" id="charactGohan">
+            <p><strong>Nom</strong> : Son Gohan</p>
+            <p><strong>Naissance</strong> : 757</p>
+            <p><strong>Origine</strong> : Terre</p>
+            <p><strong>Espèce</strong> : Mi-Terrien mi-Saiyan</p>
+        </div>
+        <div>
+            <p class="msgPersonnage" id="msgPersonnage"><strong>Son Gohan </strong>: Premier fils de Son Gokû et de
+                Chichi, son potentiel
+                de puissance surpasse de loin celui de son père et combattra aux côtés des protagonistes dès son plus
+                jeune âge. Atout majeur de l'équipe qui a notamment vaincu Cell, il cesse de s'entraîner sérieusement
+                après 7 ans de paix et s'éclipse peu à peu, se concentrant sur son travail scientifique et sa vie de
+                famille avec son épouse et sa fille. Il reste cependant présent lors de combats majeurs tels que la
+                menace de Majin Boo ou encore le Tournoi du Pouvoir.</p>
+        </div>
+    </section>
+
+    <section class="skills" id="carousselPersonnage">
+        <div>
+            <h2 classe="nameCompetence" id="nameCompetence"></h2>
+            <p class="msgCompetence" id="msgCompetence"></p>
+        </div>
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <input type="radio" name="slider" id="item-4">
+            <input type="radio" name="slider" id="item-5">
+            <div class="cards">
+                <label onclick="selectImgCompetence(0)" class="card" for="item-1" id="song-1">
+                    <img class="imgCompetence" src="src/fusion.jpg" alt="fusion">
+                </label>
+                <label onclick="selectImgCompetence(1)" class="card" for="item-2" id="song-2">
+                    <img class="imgCompetence" src="src/Vol.jpg" alt="Vol">
+                </label>
+                <label onclick="selectImgCompetence(2)" class="card" for="item-3" id="song-3">
+                    <img class="imgCompetence" src="src/bouleNRJ.jpg" alt="bouleNRJ">
+                </label>
+                <label onclick="selectImgCompetence(3)" class="card" for="item-4" id="song-4">
+                    <img class="imgCompetence" src="src/Ressentir_KI.jpg" alt="ressentir_Ki">
+                </label>
+                <label onclick="selectImgCompetence(4)" class="card" for="item-5" id="song-5">
+                    <img class="imgCompetence" src="src/Telekinesie.jpg" alt="telekinesie">
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
