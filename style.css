@@ -1,6 +1,40 @@
 * {
     box-sizing: border-box;
+    margin: 0 0;
+}
 
+h1, h2 {
+    color: #072083;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+p{
+    color: #5C5C5C;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+a:link, a:visited,  a:hover, a:active
+{
+    color: #072083;
+    text-decoration: none;
+}
+
+hr {
+    border: 1px solid #E59982;
 }
 
 
@@ -11,28 +45,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: solid 2px #FEC3A3;
 }
 
 #form {
     width: 75%;
+    margin: 20px 0 40px 0;
 }
 
 
 .form-tilte {
     margin: 1em 0 0 0;
     font-weight: 800;
-    color: red;
+    color: #072083;
 }
 
 
 .form-text {
-    margin: 1em 0 0.75em 2.2em;
-    font-weight: 800;
-
+    /* margin: 1em 0 0.75em 2.2em;
+    font-weight: 800; */
+    display: none;
 }
 
 .form-input-grid {
-    margin: 1.5em 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1em;
@@ -43,56 +78,53 @@
 }
 
 #textarea textarea {
-    border-radius: 2.25em;
+    border-radius: 1.5em;
 }
 
 .form-input {
     width: 100%;
     padding: 1.2em 1.2em 1.2em 3.6em;
-    border-radius: 5em;
-    box-shadow: 15px 0px 20px 0 rgba(3, 15, 104, .8);
-    background-color: rgb(149, 177, 255);
-    border: none;
+    border-radius: 1em;
+    background-color: #fff;
+    border: solid #FEC3A3;
+    border-width: 2px;
 }
 
 .form-input:hover {
-    border: 2px solid;
+    border: solid #FEC3A3;
+    border-width: 2px;
 }
 
 #form-button {
     font-size: 1.22rem;
-    background-color: rgb(149, 177, 255);
-    box-shadow: 15px 0px 20px 0 rgba(3, 15, 104, .8);
+    border: solid #FEC3A3;
+    border-width: 2px;
 }
 
 
 
-.button,
-.btn-secondary {
-
+.button, .btn-secondary {
     width: 100%;
     position: relative;
     padding: 1.1em 1.8em;
     letter-spacing: .1em;
-    border-radius: 30px;
+    border-radius: 1rem;
     border: none;
     cursor: pointer;
+    background-color: #FEC3A3;
+    color: #072083;
 
 }
 
 .button:focus,
 .button:hover {
-    transform: scale3d(1.1, 1.1, 1);
-    background-position: 100% 50%;
-    outline: none;
-    bottom: 2px;
+    background-color: #ffffff;
 }
 
 
 textarea {
     min-height: 10em;
     transition: opacity 15s ease-in-out;
-    background-color: cornflowerblue;
 }
 
 @media only screen and (max-width: 576px) {
@@ -105,26 +137,84 @@ textarea {
     }
 }
 
-
-
-
-
-
-
-
-
 /* partie de Sylvain*/
+@media(min-width: 768px) and (max-width: 3000px) {
+ul {
+    display: flex;
+    justify-content: center;
+    border-bottom: #072083 solid 2px;
+    width: 100%;
+}
+.sidenav ul {
+    display: flex;
+    position: absolute;
+    list-style-type: none;
+    top: 0;
+    height: 60px;
+}
+.sidenav ul a {
+    margin: 25px;
+    list-style-type: none;
+    font-family: 'Oswald';
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #072083;
+}
+.ctaButton {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    block-size: 60px;
+    font-weight: bold;
+    margin-top: 0px;
+    padding: 7px 9px;
+}
+}
 @media screen and (max-width: 600px) {
     nav h1 {
         max-width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
-
     }
+  .ctaButton {    
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    block-size: 60px;
+    font-weight: bold;
+    margin-top: 0px;
+    padding: 7px 9px;
+  }
+.header-picture {
+    object-fit: cover;
+    width: 100%;
+    }
+    
+.logo {
+    position: absolute;
+    left: 45%;
+    top:0;
+}
+/* Sidenav menu */
+.text-nav-open{
+    font-size: 20px;
 }
 
-/* Sidenav menu */
+#myLogo-nav-burger{
+    display: flex;
+    justify-content: center;
+}
+
+.trait-nav{
+    width: 100%;
+}
+
 .sidenav {
     height: 100%;
     width: 200px;
@@ -132,21 +222,23 @@ textarea {
     z-index: 10;
     top: 0;
     left: -250px;
-    background-color: #e8e8e8;
-    padding-top: 60px;
+    background-color: #fff;
     transition: left 0.5s ease;
 }
 
 .sidenav ul {
+    display: flex;
     position: absolute;
+    flex-direction: column;
     top: 20%;
     list-style-type: none;
     padding: 0px;
-    margin: 0px;
+    margin-left: 20%;
+    list-style-type: none;
+    margin: 25px;
 }
 
 /* Sidenav menu links */
-@media screen and (max-width: 600px) {
     .sidenav a {
         padding: 8px 8px 8px 32px;
         text-transform: uppercase;
@@ -154,22 +246,22 @@ textarea {
         text-align: center;
         font-size: 25px;
         font-family: 'Oswald', sans-serif;
-        margin: 15px;
+        margin: 0.50rem;
         color: #818181;
         display: flex;
         transition: 0.3s;
         justify-content: space-around;
     }
-}
 
 .sidenav a:hover {
-    color: rgb(163, 8, 8);
+    color: #E59982;
 }
 
 /* Active class */
 .sidenav.active {
     left: 0;
-    width: 50%;
+    width: 100%;
+    height: 60%;
 }
 
 /* Close btn */
@@ -187,13 +279,14 @@ textarea {
     top: 20px;
     left: 10px;
     z-index: 20;
+    
 }
 
-.burger-icon span {
+ .burger-icon span {
     display: flex;
     width: 30px;
     height: 4px;
-    background-color: black;
+    background-color: #072083;
     margin-top: 4px;
 }
 
@@ -202,19 +295,17 @@ nav h1 {
     justify-content: center;
     width: auto;
     font-size: 2.5rem;
-    color: black;
-
 }
 
 
 /*partie de Gaëtan*/
 
-
-
 #caroussel {
     display: flex;
     width: 100%;
+
     height: 100%;
+
     /*régler height pour voir plus ou moins le carrousel */
     flex-direction: column;
     align-items: center;
@@ -253,7 +344,8 @@ input[type=radio] {
 }
 
 .cards {
-    position: relative;
+    display: flex;
+    /* position: relative; */
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
@@ -295,7 +387,6 @@ input[type=radio] {
     transform: translatex(0) scale(1);
     opacity: 1;
     z-index: 1;
-
 }
 
 
@@ -320,8 +411,10 @@ input[type=radio] {
 }
 
 .msg {
+
     width: 100%;
     padding: 1rem;
+    height: 100px;
 }
 
 /* fiche personnage */
@@ -334,6 +427,10 @@ input[type=radio] {
 
 .bodyCharacter {
     margin-top: -20px;
+}
+
+.container-picture{
+    margin: 20px;
 }
 
 .presentationPersonnage {
@@ -355,11 +452,14 @@ input[type=radio] {
     padding: 1rem;
 }
 
+/* .imgArene {
+    margin-top: 50px;
+} */
+
 .nameCompetence {
     width: 100%;
     text-align: left;
 }
-
 
 .imgCompetence {
     width: 100%;
@@ -377,7 +477,7 @@ input[type=radio] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px 10px;
+    padding: 0 10px;
     transition: background .4s ease-in;
 
 }
@@ -417,6 +517,10 @@ input[type=radio] {
 
 /* Style 1ere section (H2, P, Image heros)  */
 
+.team-text {
+    margin: 50px 20px 20px 20px;
+}
+
 .team-picture {
     display: flex;
     justify-content: center;
@@ -434,8 +538,10 @@ input[type=radio] {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: solid 1px #fff;
     background-position: center;
     background-size: cover;
+    background-color: #FEC3A3;
 }
 
 .team-picture-div:hover {
@@ -446,8 +552,9 @@ input[type=radio] {
 /* Style fotter */
 
 .nav-footer {
-    background-color: aliceblue;
-    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #FEC3A3;
     width: 100%;
     /* position: absolute; */
     bottom: 0;
@@ -458,7 +565,11 @@ input[type=radio] {
 }
 
 .nav-footer a:hover {
-    color: gold;
+    color: #E59982;
+}
+
+.nav-footer-perso {
+    margin: 50px;
 }
 
 
