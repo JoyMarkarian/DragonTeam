@@ -10,6 +10,10 @@ h1, h2 {
     font-family: 'Oswald', sans-serif;
 }
 
+li {
+    font-family: 'Oswald', sans-serif;
+}
+
 h1{
     font-size: 20px;
 }
@@ -38,6 +42,8 @@ hr {
 }
 
 
+
+/* @media screen and (max-width: 768px) { */
 /**partie de Sebastien*/
 
 .form-wrapper {
@@ -127,7 +133,7 @@ textarea {
     transition: opacity 15s ease-in-out;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 480px) {
 
     /* Form */
     .form-input-grid {
@@ -136,56 +142,24 @@ textarea {
         grid-column-gap: 0;
     }
 }
-
+@media screen and (max-width: 767px) {
 /* partie de Sylvain*/
-@media(min-width: 768px) and (max-width: 3000px) {
-ul {
-    display: flex;
-    justify-content: center;
-    border-bottom: #072083 solid 2px;
-    width: 100%;
-}
-.sidenav ul {
-    display: flex;
-    position: absolute;
-    list-style-type: none;
-    top: 0;
-    height: 60px;
-}
-.sidenav ul a {
-    margin: 25px;
-    list-style-type: none;
-    font-family: 'Oswald';
-    font-style: normal;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    color: #072083;
-}
-.ctaButton {
-    display: flex;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    block-size: 60px;
-    font-weight: bold;
-    margin-top: 0px;
-    padding: 7px 9px;
-}
-}
-@media screen and (max-width: 600px) {
     nav h1 {
         max-width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
     }
+    
+    .ctaButton2{
+        display: none;
+    }
+
   .ctaButton {    
     display: flex;
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 5px;
     block-size: 60px;
     font-weight: bold;
     margin-top: 0px;
@@ -198,8 +172,9 @@ ul {
     
 .logo {
     position: absolute;
-    left: 45%;
-    top:0;
+    height: 50px;
+    left: 27%;
+    top:10px;
 }
 /* Sidenav menu */
 .text-nav-open{
@@ -227,30 +202,35 @@ ul {
 }
 
 .sidenav ul {
-    display: flex;
+    /* display: flex; */
     position: absolute;
     flex-direction: column;
-    top: 20%;
+    /* top: 20%; */
     list-style-type: none;
     padding: 0px;
-    margin-left: 20%;
+    /* margin-left: 20%; */
     list-style-type: none;
-    margin: 25px;
+    margin: 10px;
+}
+
+.personnageh2 {
+    margin-left: 40px;
 }
 
 /* Sidenav menu links */
     .sidenav a {
-        padding: 8px 8px 8px 32px;
+        padding: 8px 30px 8px 32px;
         text-transform: uppercase;
         text-decoration: none;
         text-align: center;
         font-size: 25px;
         font-family: 'Oswald', sans-serif;
-        margin: 0.50rem;
-        color: #818181;
+        /* margin: 0.50rem; */
+        color: #072083;
         display: flex;
         transition: 0.3s;
-        justify-content: space-around;
+
+        /* justify-content: space-around; */
     }
 
 .sidenav a:hover {
@@ -261,7 +241,10 @@ ul {
 .sidenav.active {
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 400px;
+    background-color: #FEC3A3;
+    border: solid 5px #E59982;
+    border-radius: 2%;
 }
 
 /* Close btn */
@@ -296,21 +279,18 @@ nav h1 {
     width: auto;
     font-size: 2.5rem;
 }
-
-
+}
 /*partie de Gaëtan*/
 
 #caroussel {
     display: flex;
     width: 100%;
-
     height: 100%;
-
     /*régler height pour voir plus ou moins le carrousel */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px 10px;
+    padding: 0 10px;
     transition: background .4s ease-in;
 
 }
@@ -335,20 +315,22 @@ input[type=radio] {
     width: 100%;
     /* max-width: 400px;
     max-height: 200px; */
-    height: 20vh;
+    height: 50vh;
     transform-style: preserve-3d;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 
+
+
 }
 
 .cards {
-    display: flex;
-    /* position: relative; */
+    /* display: flex; */
+    position: relative;
     width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
+    height: 70%;
+    /* margin-bottom: 20px; */
 }
 
 .imgArene {
@@ -418,12 +400,6 @@ input[type=radio] {
 }
 
 /* fiche personnage */
-#headerGohan {
-    width: 100%;
-    height: 220px;
-    background-image: url(src/bodyGohan.jpg);
-    background-size: cover;
-}
 
 .bodyCharacter {
     margin-top: -20px;
@@ -442,9 +418,9 @@ input[type=radio] {
 }
 
 #namePersonnage {
-    width: 100%;
+    /* width: 100%; */
     background-color: #a18cf280;
-    padding: 1rem 7.1rem 0.6rem;
+    padding: 2rem 7.1rem 0.6rem;
 }
 
 .msgPersonnage {
@@ -483,19 +459,19 @@ input[type=radio] {
 }
 
 .photo>img {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
-    background-color: black;
+    width: 10rem;
+    background-color: #E59982;
     clip-path: circle(40% at 5rem 5rem);
     /* clip-path pour arondir la photo */
     padding-bottom: 2rem;
 
 }
 
-.photo {
-    width: 10rem;
+/* .photo {
     height: 100%;
-}
+} */
 
 #charactGohan {
     width: 100%;
@@ -509,7 +485,7 @@ input[type=radio] {
 }
 
 #msgPersonnage {
-    margin: 0;
+    margin-bottom: 40px;
 }
 
 
@@ -573,5 +549,77 @@ input[type=radio] {
 }
 
 
-
 /*partie de Joy*/
+
+
+@media screen and (min-width: 767px) {
+   
+#myLogo-nav-burger {
+display: none;
+}
+
+#closeBtn {
+display: none;
+}
+
+.logo{
+    position: absolute;
+    height: 50px;
+    top:10px;
+    margin-left: 20px;
+}
+   
+ul {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 20px;
+    }
+    .sidenav ul {
+        display: flex;
+        position: absolute;
+        list-style-type: none;
+        top: 0;
+        height: 60px;
+    }
+    .sidenav ul a {
+        margin: 25px;
+        list-style-type: none;
+        /* font-family: 'Oswald'; */
+        /* font-style: normal; */
+        text-decoration: none;
+        /* font-weight: 700; */
+        font-size: 24px;
+        line-height: 36px;
+        color: #072083;
+    }
+    .ctaButton {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        block-size: 60px;
+        font-weight: bold;
+        margin-top: 0px;
+        padding: 7px 9px;
+    }
+
+    #closeBtn {
+        display: none;
+    }
+    .ctaButton2 {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        block-size: 60px;
+        font-weight: bold;
+        margin-top: 0px;
+        padding: 7px 9px;
+    }
+
+    .ctaButton {
+        display: none;
+    }
+
+    }

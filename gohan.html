@@ -7,22 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gohan</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https : // fonts.googleapis.com/css2 ? _ _ _ _ _ _ 0,900;1,100 & display=swap" rel="feuille de style">
 </head>
 
-<body class="bodyCharacter" onload="selectImgCompetence(0)">
-    <header class="headerGohan" id="headerGohan">
-        <nav>
-            <h1 id="myLogo" class="logo">Notre Logo</h1>
+<body class=" bodyCharacter" onload="selectImgCompetence(0)">
+    <header class="header-page">
+        <img class="header-picture" src="/pictures/home.png" alt="maison">
+        <nav class=nav-header>
+            <a class="logo" href="index.html"><img src="/src/unknown-2.png" alt=""></a>
             <div id="mySidenav" class="sidenav">
-                <a id="closeBtn" href="#" class="close">&times;
-                </a>
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Son Goku</a></li>
-                    <li><a href="#">Vegeta</a></li>
-                    <li><a href="#">Trunks</a></li>
-                    <li><a href="#">Bulma</a></li>
-                    <li><a href="#">Gohan</a></li>
+                <a id="myLogo-nav-burger" href="index.html"><img src="/src/unknown-2.png" alt=""></a>
+                <hr />
+                <a id="closeBtn" href="#" class="close">&times;</a>
+                <ul class="text-nav-open">
+                    <li>
+                        <a href="/about_us.html">À PROPOS</a>
+                    </li>
+                    <li><a href="bulma.html">BULMA</a></li>
+                    <li><a href="gohan.html">GOHAN</a></li>
+                    <li><a href="son_goku.html">SON GOKU</a></li>
+                    <li><a href="trunks.html">TRUNKS</a></li>
+                    <li><a href="vegeta.html">VEGETA</a></li>
                 </ul>
 
             </div>
@@ -33,12 +42,13 @@
                     <span></span>
                 </span>
             </a>
-
+            <a class="ctaButton" href="#form" title="Contact"><img src="/pictures/cta.png" alt=""></a>
+            <a class="ctaButton2" href="#form" title="Contact"><img src="/pictures/contactcta.png" alt=""></a>
         </nav>
     </header>
     <section class="presentationPersonnage" id="presentationPersonnage">
         <div>
-            <h1 classe="namePersonnage" id="namePersonnage">Son Gohan</h1>
+            <h1 id="namePersonnage">SON GOHAN</h1>
 
         </div>
         <div class="photo">
@@ -51,7 +61,7 @@
             <p><strong>Espèce</strong> : Mi-Terrien mi-Saiyan</p>
         </div>
         <div>
-            <p class="msgPersonnage" id="msgPersonnage"><strong>Son Gohan </strong>: Premier fils de Son Gokû et de
+            <p class="msgPersonnage" id="msgPersonnage">Premier fils de Son Gokû et de
                 Chichi, son potentiel
                 de puissance surpasse de loin celui de son père et combattra aux côtés des protagonistes dès son plus
                 jeune âge. Atout majeur de l'équipe qui a notamment vaincu Cell, il cesse de s'entraîner sérieusement
@@ -60,9 +70,9 @@
                 menace de Majin Boo ou encore le Tournoi du Pouvoir.</p>
         </div>
     </section>
-
-    <section class="skills" id="carousselPersonnage">
+    <section class=" skills" id="carousselPersonnage">
         <div>
+            <h1>COMPETENCES</h1>
             <h2 classe="nameCompetence" id="nameCompetence"></h2>
             <p class="msgCompetence" id="msgCompetence"></p>
         </div>
@@ -91,6 +101,80 @@
             </div>
         </div>
     </section>
+    <section class="contact">
+
+        <div class="form-wrapper">
+            <form id="form" method="post" name="postform" action="email.php">
+                <h2 class="form-title">Contact</h2>
+
+                <div class="form-input-grid">
+                    <div>
+                        <p class="form-text">Nom*</p>
+                        <div class="form-input-wrapper flexbox-left">
+                            <input class="form-input" id="uname" name="uname" type="text" placeholder="Nom"
+                                aria-label="" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="form-text">Prénom*</p>
+                        <div class="form-input-wrapper flexbox-lef">
+                            <input class="form-input" id="pnom" type="text" placeholder="Prénom" aria-label="" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-input-max">
+                    <p class="form-text">Email*</p>
+                    <div class="form-input-wrapper flexbox-left">
+                        <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label=""
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-input-max">
+                    <p class="form-text">Message*</p>
+                    <div id="textarea" class="form-input-wrapper flexbox-left-start">
+                        <textarea class="form-input" id="message" name="message" placeholder="Message" aria-label=""
+                            required></textarea>
+                    </div>
+                </div>
+
+
+                <div class="form-input-max flexbox-left">
+                    <div class="button-wrapper">
+
+                        <button id="form-button" type="submit" class="button btn-primary">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="nav-footer">
+            <div class="nav-footer-perso">
+                <h2><a href="/about_us.html">À propos</a></h2>
+                <hr />
+                <h2>Les personnages</h2>
+                <ul class="nav-footer-text">
+                    <li><a href="/bulma.html">Bulma</a></li>
+                    <li><a href="/gohan.html">Gohan</a></li>
+                    <li><a href="/son_goku.html">Son Goku</a></li>
+                    <li><a href="/trunks.html">Trunks</a></li>
+                    <li><a href="/vegeta.html">Vegeta</a></li>
+                </ul>
+            </div>
+            <div class="nav-footer-perso">
+                <h2>Les partenaires</h2>
+                <ul class="nav-footer-text">
+                    <li><a href="/bulma.html">Site 1</a></li>
+                    <li><a href="/gohan.html">Site 2</a></li>
+                    <li><a href="/son_goku.html">Site 3</a></li>
+                    <li><a href="/trunks.html">Site 4</a></li>
+                    <li><a href="/vegeta.html">Site 5</a></li>
+                </ul>
+            </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
