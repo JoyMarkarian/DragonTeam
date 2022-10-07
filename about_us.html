@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gohan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https : // fonts.googleapis.com/css2 ? _ _ _ _ _ _ 0,900;1,100 & display=swap" rel="feuille de style">
+</head>
+
+<body class=" bodyCharacter" onload="selectImgCompetence(0)">
+  <header class="header-page">
+    <img class="header-picture" src="src/APropos_Header.jpeg" alt="maison">
+    <nav class=nav-header>
+      <a class="logo" href="index.html"><img src="/src/unknown-2.png" alt=""></a>
+      <div id="mySidenav" class="sidenav">
+        <a id="myLogo-nav-burger" href="index.html"><img src="/src/unknown-2.png" alt=""></a>
+        <hr />
+        <a id="closeBtn" href="#" class="close">&times;</a>
+        <ul class="text-nav-open">
+          <li>
+            <a href="/about_us.html"><strong>À PROPOS</strong></a>
+        </li>
+        <li><a href="bulma.html"><strong>BULMA</strong></a></li>
+        <li><a href="gohan.html"><strong>GOHAN</strong></a></li>
+        <li><a href="son_goku.html"><strong>SON GOKU</strong></a></li>
+        <li><a href="trunks.html"><strong>TRUNKS</strong></a></li>
+        <li><a href="vegeta.html"><strong>VEGETA</strong></a></li>
+        </ul>
+
+      </div>
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+      <a class="ctaButton" href="#form" title="Contact"><img src="/pictures/cta.png" alt=""></a>
+      <a class="ctaButton2" href="#form" title="Contact"><img src="/pictures/contactcta.png" alt=""></a>
+    </nav>
+  </header>
+  <section class="presentationPersonnage" id="presentationPersonnage">
+    <div>
+      <h1 id="namePersonnage">À PROPOS DE NOUS</h1>
+
+    </div>
+      <p class="msgPersonnage" id="msgPersonnage">Nous sommes le 12 septembre 2022. C’est la rentrée à la Wild Code School. Nous découvrons nos formateurs, nos camarades et le programme de la formation intensive Développeur web et mobile que nous suivrons les cinq prochains mois. <br>
+Deux semaines après avoir, pour la plupart d’entre nous, découvert l’univers du développement web, le projet 1 est lancé, les instructions sont données : créer une page web statique responsive avec un design professionnel, en utilisant HTML, CSS et, de manière facultative, JavaScript en 3 jours. Notre site doit être constitué d’une page d’accueil, d’une page personnage pour chacun d’entre nous ainsi que d’une page A propos. <br>
+
+Nous découvrons notre équipe : <br>
+- Gaëtan LEMOINE, <br>
+- Joy MARKARIAN, <br>
+- Sébastien PETACCIA,<br> 
+- Charlie PIANCATELLI, <br>
+- Sylvain TORMO. <br>
+
+La diversité de notre équipe fût une richesse tout au long de ce projet : des parcours différents, des profils hétérogènes et atypiques. <br>
+
+La thématique de notre projet s’est imposée comme une évidence : l’univers Dragon Ball était familier de tous puisqu’ayant traversé les générations. <br>
+
+Nous sommes le 7 octobre 2022. C’est le grand jour, le jour de la démonstration finale de nos projets. Ce fût une expérience à la fois riche, stimulante mais aussi stressante. Mais l’organisation, la répartition des tâches, le design et le code à proprement parler ont finalement été une partie de plaisir à côté des difficultés rencontrées dans l’usage de Git/Github. </p>
+    </div>
+  </section>
+
+  <section class="contact">
+
+    <div class="form-wrapper">
+      <form id="form" method="post" name="postform" action="email.php">
+        <h1 class="form-title">Contact</h1>
+
+        <div class="form-input-grid">
+          <div>
+            <p class="form-text">Nom*</p>
+            <div class="form-input-wrapper flexbox-left">
+              <input class="form-input" id="uname" name="uname" type="text" placeholder="Nom" aria-label="" required>
+            </div>
+          </div>
+
+          <div>
+            <p class="form-text">Prénom*</p>
+            <div class="form-input-wrapper flexbox-lef">
+              <input class="form-input" id="pnom" type="text" placeholder="Prénom" aria-label="" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-input-max">
+          <p class="form-text">Email*</p>
+          <div class="form-input-wrapper flexbox-left">
+            <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label="" required>
+          </div>
+        </div>
+
+        <div class="form-input-max">
+          <p class="form-text">Message*</p>
+          <div id="textarea" class="form-input-wrapper flexbox-left-start">
+            <textarea class="form-input" id="message" name="message" placeholder="Message" aria-label=""
+              required></textarea>
+          </div>
+        </div>
+
+
+        <div class="form-input-max flexbox-left">
+          <div class="button-wrapper">
+
+            <button id="form-button" type="submit" class="button btn-primary"><strong>Envoyer</strong></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="nav-footer">
+      <div class="nav-footer-perso">
+        <h2><a href="/about_us.html">À propos</a></h2>
+        <hr />
+        <h2>Personnages</h2>
+        <ul class="nav-footer-text">
+          <li><a href="/bulma.html">Bulma</a></li>
+          <li><a href="/gohan.html">Gohan</a></li>
+          <li><a href="/son_goku.html">Son Goku</a></li>
+          <li><a href="/trunks.html">Trunks</a></li>
+          <li><a href="/vegeta.html">Vegeta</a></li>
+        </ul>
+      </div>
+      <div class="nav-footer-perso">
+        <h2>Sites partenaires</h2>
+        <ul class="nav-footer-text">
+          <li><a href="https://dragonballsuper-france.fr/">Dragon Ball Super France</a></li>
+          <li><a href="https://www.db-z.com/">DB.Z.com</a></li>
+          <li><a href="https://dragonball.fandom.com/fr/">Wiki Dragon Ball</a></li>
+          <li><a href="https://www.dragonballsuper-vostfr.com/">Dragon Ball Super VOSTFR</a></li>
+          <li><a href="https://goku-shop.fr/">Goku Shop</a></li>
+        </ul>
+      </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
