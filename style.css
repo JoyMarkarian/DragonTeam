@@ -52,8 +52,8 @@ a:active {
     justify-content: center;
     align-items: center;
     border: solid 2px #FEC3A3;
-    
-#form {
+}
+ #form {
     width: 75%;
     margin: 20px 0 40px 0;
 }
