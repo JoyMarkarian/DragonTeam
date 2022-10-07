@@ -171,7 +171,7 @@ function selectImgCompetence(carditem) {
 const button = document.getElementById("form-button");
 button.addEventListener("click", function(event){
  event.preventDefault()
- alert("Bienvenue à la Dragon Team");
+ alert("Nous vous remercions pour votre message. Nous vous répondrons dans les plus brefs délais");
 });
 
 /* Partie de Charlie*/
