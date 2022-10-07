@@ -568,6 +568,9 @@ input[type=radio] {
 
 .nav-footer-text {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
 }
 
 .nav-footer a:hover {
@@ -576,6 +579,7 @@ input[type=radio] {
 
 .nav-footer-perso {
     margin: 50px;
+    
 }
 
 
