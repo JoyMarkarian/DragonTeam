@@ -3,7 +3,8 @@
     margin: 0 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #072083;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -14,15 +15,15 @@ li {
     font-family: 'Oswald', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 20px;
 }
 
-h2{
+h2 {
     font-size: 18px;
 }
 
-p{
+p {
     color: #5C5C5C;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -31,8 +32,10 @@ p{
 }
 
 
-a:link, a:visited,  a:hover, a:active
-{
+a:link,
+a:visited,
+a:hover,
+a:active {
     color: #072083;
     text-decoration: none;
 }
@@ -117,7 +120,8 @@ hr {
 
 
 
-.button, .btn-secondary {
+.button,
+.btn-secondary {
     width: 100%;
     position: relative;
     padding: 1.1em 1.8em;
@@ -150,82 +154,94 @@ textarea {
         /* grid-column-gap: 0; 
      } */
 
+
+    /* Form */
+    .form-input-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 0;
+    }
+}
+
 @media screen and (max-width: 767px) {
-/* partie de Sylvain*/
+
+    /* partie de Sylvain*/
     nav h1 {
         max-width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
     }
-    
-    .ctaButton2{
+
+    .ctaButton2 {
         display: none;
     }
 
-  .ctaButton {    
-    display: flex;
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    block-size: 60px;
-    font-weight: bold;
-    margin-top: 0px;
-    padding: 7px 9px;
-  }
-.header-picture {
-    object-fit: cover;
-    width: 100%;
+    .ctaButton {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        block-size: 60px;
+        font-weight: bold;
+        margin-top: 0px;
+        padding: 7px 9px;
     }
-    
-.logo {
-    position: absolute;
-    height: 50px;
-    left: 27%;
-    top:10px;
-}
-/* Sidenav menu */
-.text-nav-open{
-    font-size: 20px;
-}
 
-#myLogo-nav-burger{
-    display: flex;
-    justify-content: center;
-}
+    .header-picture {
+        object-fit: cover;
+        width: 100%;
+    }
 
-.trait-nav{
-    width: 100%;
-}
+    .logo {
+        position: absolute;
+        height: 50px;
+        left: 27%;
+        top: 10px;
+    }
 
-.sidenav {
-    height: 100%;
-    width: 200px;
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: -250px;
-    background-color: #fff;
-    transition: left 0.5s ease;
-}
+    /* Sidenav menu */
+    .text-nav-open {
+        font-size: 20px;
+    }
 
-.sidenav ul {
-    /* display: flex; */
-    position: absolute;
-    flex-direction: column;
-    /* top: 20%; */
-    list-style-type: none;
-    padding: 0px;
-    /* margin-left: 20%; */
-    list-style-type: none;
-    margin: 10px;
-}
+    #myLogo-nav-burger {
+        display: flex;
+        justify-content: center;
+    }
 
-.personnageh2 {
-    margin-left: 40px;
-}
+    .trait-nav {
+        width: 100%;
+    }
 
-/* Sidenav menu links */
+    .sidenav {
+        height: 100%;
+        width: 200px;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: -250px;
+        background-color: #fff;
+        transition: left 0.5s ease;
+    }
+
+    .sidenav ul {
+        /* display: flex; */
+        position: absolute;
+        flex-direction: column;
+        /* top: 20%; */
+        list-style-type: none;
+        padding: 0px;
+        /* margin-left: 20%; */
+        list-style-type: none;
+        margin: 10px;
+    }
+
+    .personnageh2 {
+        margin-left: 40px;
+    }
+
+    /* Sidenav menu links */
     .sidenav a {
         padding: 8px 30px 8px 32px;
         text-transform: uppercase;
@@ -241,53 +257,54 @@ textarea {
         /* justify-content: space-around; */
     }
 
-.sidenav a:hover {
-    color: #E59982;
+    .sidenav a:hover {
+        color: #E59982;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        left: 0;
+        width: 100%;
+        height: 400px;
+        background-color: #FEC3A3;
+        border: solid 5px #E59982;
+        border-radius: 2%;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0px;
+        right: 25px;
+        font-size: 36px;
+        z-index: 20;
+        margin-top: 7px;
+    }
+
+    .burger-icon {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        z-index: 20;
+
+    }
+
+    .burger-icon span {
+        display: flex;
+        width: 30px;
+        height: 4px;
+        background-color: #072083;
+        margin-top: 4px;
+    }
+
+    nav h1 {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        font-size: 2.5rem;
+    }
 }
 
-/* Active class */
-.sidenav.active {
-    left: 0;
-    width: 100%;
-    height: 400px;
-    background-color: #FEC3A3;
-    border: solid 5px #E59982;
-    border-radius: 2%;
-}
-
-/* Close btn */
-.sidenav .close {
-    position: absolute;
-    top: 0px;
-    right: 25px;
-    font-size: 36px;
-    z-index: 20;
-    margin-top: 7px;
-}
-
-.burger-icon {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    z-index: 20;
-    
-}
-
- .burger-icon span {
-    display: flex;
-    width: 30px;
-    height: 4px;
-    background-color: #072083;
-    margin-top: 4px;
-}
-
-nav h1 {
-    display: flex;
-    justify-content: center;
-    width: auto;
-    font-size: 2.5rem;
-}
-}
 /*partie de Gaëtan*/
 
 #caroussel {
@@ -413,7 +430,7 @@ input[type=radio] {
     margin-top: -20px;
 }
 
-.container-picture{
+.container-picture {
     margin: 20px;
 }
 
@@ -429,6 +446,7 @@ input[type=radio] {
     /* width: 100%; */
     background-color: rgba(7, 32, 131, 0.31);
     padding: 2rem 7.1rem 0.6rem;
+    border-radius: 200px;
 }
 
 .msgPersonnage {
@@ -444,6 +462,11 @@ input[type=radio] {
     width: 100%;
     text-align: left;
 }
+
+#competencesPersonnage {
+    margin-left: 20px;
+}
+
 
 .imgCompetence {
     width: 100%;
@@ -561,28 +584,29 @@ input[type=radio] {
 
 
 @media screen and (min-width: 767px) {
-   
-#myLogo-nav-burger {
-display: none;
-}
 
-#closeBtn {
-display: none;
-}
+    #myLogo-nav-burger {
+        display: none;
+    }
 
-.logo{
-    position: absolute;
-    height: 50px;
-    top:10px;
-    margin-left: 20px;
-}
-   
-ul {
+    #closeBtn {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        height: 50px;
+        top: 10px;
+        margin-left: 20px;
+    }
+
+    ul {
         display: flex;
         justify-content: center;
         width: 100%;
         margin: 20px;
     }
+
     .sidenav ul {
         display: flex;
         position: absolute;
@@ -590,6 +614,7 @@ ul {
         top: 0;
         height: 60px;
     }
+
     .sidenav ul a {
         margin: 25px;
         list-style-type: none;
@@ -601,6 +626,7 @@ ul {
         line-height: 36px;
         color: #072083;
     }
+
     .ctaButton {
         display: flex;
         position: absolute;
@@ -615,6 +641,7 @@ ul {
     #closeBtn {
         display: none;
     }
+
     .ctaButton2 {
         display: flex;
         position: absolute;
@@ -630,4 +657,16 @@ ul {
         display: none;
     }
 
+    #carousselPersonnage {
+        margin: auto;
+        width: 800px;
+        justify-content: center;
+        align-items: center;
+
     }
+
+    #namePersonnage {
+        padding: 2rem 30rem 0.6rem;
+
+    }
+}
