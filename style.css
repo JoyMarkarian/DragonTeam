@@ -563,7 +563,7 @@ input[type=radio] {
 /*partie de Joy*/
 
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1500px) {
 
     h1 {
         font-size: 32px;
