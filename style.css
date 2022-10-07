@@ -161,7 +161,6 @@ textarea {
         grid-template-rows: 1fr 1fr;
         grid-column-gap: 0;
     }
-}
 
 @media screen and (max-width: 767px) {
 
