@@ -2,31 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trunks</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https : // fonts.googleapis.com/css2 ? _ _ _ _ _ _ 0,900;1,100 & display=swap" rel="feuille de style">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trunks</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https : // fonts.googleapis.com/css2 ? _ _ _ _ _ _ 0,900;1,100 & display=swap" rel="feuille de style">
 </head>
 
 <body class=" bodyCharacter" onload="selectImgCompetence(0)">
 
   <header class="header-page">
-    <img class="header-picture" src="/src/trunks-bulma-bra.jpg" alt="maison">
+    <img class="header-picture" src="./src/trunks-bulma-bra.jpg" alt="maison">
     <nav class=nav-header>
-      <a class="logo" href="index.html"><img src="/src/unknown-2.png" alt=""></a>
+      <a class="logo" href="index.html"><img src="./src/unknown-2.png" alt=""></a>
       <div id="mySidenav" class="sidenav">
-        <a id="myLogo-nav-burger" href="index.html"><img src="/src/unknown-2.png" alt=""></a>
-        <hr />
+        <a id="myLogo-nav-burger" href="index.html"><img src="./src/unknown-2.png" alt=""></a>
         <a id="closeBtn" href="#" class="close">&times;</a>
         <ul class="text-nav-open">
           <li>
-            <a href="/about_us.html"><strong>À PROPOS</strong></a>
+            <a href="about_us.html"><strong>À PROPOS</strong></a>
         </li>
         <li><a href="bulma.html"><strong>BULMA</strong></a></li>
         <li><a href="gohan.html"><strong>GOHAN</strong></a></li>
@@ -43,8 +42,8 @@
           <span></span>
         </span>
       </a>
-      <a class="ctaButton" href="#form" title="Contact"><img src="/pictures/cta.png" alt=""></a>
-      <a class="ctaButton2" href="#form" title="Contact"><img src="/pictures/contactcta.png" alt=""></a>
+      <a class="ctaButton" href="#form" title="Contact"><img src="./pictures/cta.png" alt=""></a>
+      <a class="ctaButton2" href="#form" title="Contact"><img src="./pictures/contactcta.png" alt=""></a>
     </nav>
   </header>
   <section class="presentationPersonnage" id="presentationPersonnage">
@@ -53,15 +52,16 @@
 
     </div>
     <div class="photo">
-      <img src="src/trunks.jpg" alt="Trunks">
+      <img src="./src/trunks.jpg" alt="Trunks">
   </div>
   <div class="charactGohan" id="charactGohan">
       <p><strong>Nom</strong> : Trunks</p>
       <p><strong>Naissance</strong> : 766</p>
       <p><strong>Origine</strong> : Terre</p>
       <p><strong>Espèce</strong> : Mi-Terrien mi-Saiyan</p>
-  </div>
-  <div>
+
+    </div>
+    <div>
       <p class="msgPersonnage" id="msgPersonnage">Truncks est le fils de Bulma et de Vegeta. 
           Par conséquent le Roi Végéta est sont grand-père coté parternel, Mr Brief son grand-père coté maternel, 
           Mme Brief sa grand-mére coté martelle, et sa soeur Bra. Trucks est un enfant qui est têtu capricieux et espiègle.
@@ -69,15 +69,19 @@
           détient de son pére, Truncks n'as pas les cheveux noirs comme les autres Saiyan, mais une coupe rose et les yeux bleus 
           qui ressemble plus à sa mère, lorsque qu'il aura une vingtaine d'années, il aura un look plus séduisant qu'il tient de
           sa mère et bien sûr, la force de son père. </p>
-  </div>
-</section>
-<section class=" skills" id="carousselPersonnage">
-  <div>
+    </div>
+  </section>
+  <section id="competencesPersonnage">
+    <div>
       <h1>COMPETENCES</h1>
       <h2 classe="nameCompetence" id="nameCompetence"></h2>
       <p class="msgCompetence" id="msgCompetence"></p>
-  </div>
-  <div class="container">
+    </div>
+  </section>
+  <section class=" skills" id="carousselPersonnage">
+
+    <div class="container">
+
       <input type="radio" name="slider" id="item-1" checked>
       <input type="radio" name="slider" id="item-2">
       <input type="radio" name="slider" id="item-3">
@@ -88,7 +92,7 @@
               <img class="imgCompetence" src="src/trunksFusion.jpg" alt="fusion">
           </label>
           <label onclick="selectImgCompetence(1)" class="card" for="item-2" id="song-2">
-              <img class="imgCompetence" src="src/trunksVol.jpeg" alt="Vol">
+              <img class="imgCompetence" src="src/trunksVol.JPEG" alt="Vol">
           </label>
           <label onclick="selectImgCompetence(2)" class="card" for="item-3" id="song-3">
               <img class="imgCompetence" src="src/trunksKame.JPEG" alt="bouleNRJ">
@@ -100,65 +104,65 @@
               <img class="imgCompetence" src="src/trunksKiai.JPEG" alt="telekinesie">
           </label>
       </div>
+
   </div>
 </section>
     <section class="contact">
+              <div class="form-wrapper">
+                <form id="form" method="post" name="postform" action="email.php">
+                  <h2 class="form-title">Contact</h2>
 
-        <div class="form-wrapper">
-            <form id="form" method="post" name="postform" action="email.php">
-                <h2 class="form-title">Contact</h2>
-
-                <div class="form-input-grid">
+                  <div class="form-input-grid">
                     <div>
-                        <p class="form-text">Nom*</p>
-                        <div class="form-input-wrapper flexbox-left">
-                            <input class="form-input" id="uname" name="uname" type="text" placeholder="Nom"
-                                aria-label="" required>
-                        </div>
+                      <p class="form-text">Nom*</p>
+                      <div class="form-input-wrapper flexbox-left">
+                        <input class="form-input" id="uname" name="uname" type="text" placeholder="Nom" aria-label=""
+                          required>
+                      </div>
                     </div>
 
                     <div>
-                        <p class="form-text">Prénom*</p>
-                        <div class="form-input-wrapper flexbox-lef">
-                            <input class="form-input" id="pnom" type="text" placeholder="Prénom" aria-label="" required>
-                        </div>
+                      <p class="form-text">Prénom*</p>
+                      <div class="form-input-wrapper flexbox-lef">
+                        <input class="form-input" id="pnom" type="text" placeholder="Prénom" aria-label="" required>
+                      </div>
                     </div>
-                </div>
+                  </div>
 
-                <div class="form-input-max">
+                  <div class="form-input-max">
                     <p class="form-text">Email*</p>
                     <div class="form-input-wrapper flexbox-left">
-                        <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label=""
-                            required>
+                      <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label=""
+                        required>
                     </div>
-                </div>
+                  </div>
 
-                <div class="form-input-max">
+                  <div class="form-input-max">
                     <p class="form-text">Message*</p>
                     <div id="textarea" class="form-input-wrapper flexbox-left-start">
-                        <textarea class="form-input" id="message" name="message" placeholder="Message" aria-label=""
-                            required></textarea>
+                      <textarea class="form-input" id="message" name="message" placeholder="Message" aria-label=""
+                        required></textarea>
                     </div>
-                </div>
+                  </div>
 
-            <button id="form-button" type="submit" class="button btn-primary"><strong>Envoyer</strong></button>
+                  <button id="form-button" type="submit" class="button btn-primary"><strong>Envoyer</strong></button>
+              </div>
           </div>
-        </div>
       </form>
     </div>
   </section>
   <footer>
     <div class="nav-footer">
       <div class="nav-footer-perso">
-        <h2><a href="/about_us.html">À propos</a></h2>
+        <h2><a href="about_us.html">À propos</a></h2>
         <hr />
         <h2>Personnages</h2>
         <ul class="nav-footer-text">
-          <li><a href="/bulma.html">Bulma</a></li>
-          <li><a href="/gohan.html">Gohan</a></li>
-          <li><a href="/son_goku.html">Son Goku</a></li>
-          <li><a href="/trunks.html">Trunks</a></li>
-          <li><a href="/vegeta.html">Vegeta</a></li>
+          <li><a href="bulma.html">Bulma</a></li>
+          <li><a href="gohan.html">Gohan</a></li>
+          <li><a href="son_goku.html">Son Goku</a></li>
+          <li><a href="trunks.html">Trunks</a></li>
+          <li><a href="vegeta.html">Vegeta</a></li>
         </ul>
       </div>
       <div class="nav-footer-perso">
@@ -174,7 +178,7 @@
   </footer>
 
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
