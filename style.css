@@ -152,13 +152,12 @@ textarea {
 /* grid-column-gap: 0; 
      } */
 
-
-/* Form */
-.form-input-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 0;
-}
+    /* Form */
+    .form-input-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 0;
+    }
 
 
 @media screen and (max-width: 767px) {
@@ -567,6 +566,9 @@ input[type=radio] {
 
 .nav-footer-text {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
 }
 
 .nav-footer a:hover {
@@ -575,6 +577,7 @@ input[type=radio] {
 
 .nav-footer-perso {
     margin: 50px;
+    
 }
 
 
@@ -582,6 +585,18 @@ input[type=radio] {
 
 
 @media screen and (min-width: 767px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    p {
+        font-size: 18px;
+    } 
 
     #myLogo-nav-burger {
         display: none;
