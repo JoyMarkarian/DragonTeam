@@ -46,15 +46,13 @@ a:active {
 /* @media screen and (max-width: 768px) { */
 /**partie de Sebastien*/
 
- .form-wrapper {
+.form-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: solid 2px #FEC3A3;
-} 
-/* @media screen and (min-width: 768px) { */
-   
+    
 #form {
     width: 75%;
     margin: 20px 0 40px 0;
@@ -76,13 +74,13 @@ a:active {
 
 .form-input-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 1em;
 }
 
 .form-input-max {
     margin: 1.5em 0;
-  
+
 }
 
 #textarea textarea {
@@ -139,6 +137,7 @@ textarea {
 }
 
 @media screen and (max-width: 1500px) {
+
 
     /* partie de Sylvain*/
     nav h1 {
@@ -546,6 +545,9 @@ input[type=radio] {
 
 .nav-footer-text {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
 }
 
 .nav-footer a:hover {
@@ -554,6 +556,7 @@ input[type=radio] {
 
 .nav-footer-perso {
     margin: 50px;
+    
 }
 
 
@@ -561,6 +564,18 @@ input[type=radio] {
 
 
 @media screen and (min-width: 767px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    p {
+        font-size: 18px;
+    } 
 
     #myLogo-nav-burger {
         display: none;
@@ -636,10 +651,14 @@ input[type=radio] {
 
     #carousselPersonnage {
         margin: auto;
-        width: 800px;
+        width: 1000px;
+        height: 600px;
         justify-content: center;
         align-items: center;
+    }
 
+    .cards {
+        height: 600px;
     }
 
     #namePersonnage {
