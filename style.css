@@ -49,13 +49,18 @@ hr {
 /* @media screen and (max-width: 768px) { */
 /**partie de Sebastien*/
 
-.form-wrapper {
+ .form-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: solid 2px #FEC3A3;
-}
+} 
+@media screen and (min-width: 768px) {
+   
+    
+    }
+
 
 #form {
     width: 75%;
@@ -78,16 +83,19 @@ hr {
 
 .form-input-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     grid-column-gap: 1em;
 }
 
 .form-input-max {
     margin: 1.5em 0;
+  
 }
 
 #textarea textarea {
     border-radius: 1.5em;
+    font-family: 'Noto Sans', sans-serif;
+
 }
 
 .form-input {
@@ -137,7 +145,15 @@ textarea {
     transition: opacity 15s ease-in-out;
 }
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
+
+    /*Form */
+     /* .form-input-grid {  */
+         /* grid-template-columns: 1fr 1fr; */
+        /* grid-template-rows: 1fr 1fr; */
+        /* grid-column-gap: 0; 
+     } */
+
 
     /* Form */
     .form-input-grid {
@@ -428,7 +444,7 @@ input[type=radio] {
 
 #namePersonnage {
     /* width: 100%; */
-    background-color: #a18cf280;
+    background-color: rgba(7, 32, 131, 0.31);
     padding: 2rem 7.1rem 0.6rem;
     border-radius: 200px;
 }
@@ -499,9 +515,9 @@ input[type=radio] {
     margin: 0;
 }
 
-#msgPersonnage {
-    margin-bottom: 40px;
-}
+/* #msgPersonnage {
+    margin-bottom: 40px; */
+/* } */
 
 
 /*partie de Charlie*/
@@ -630,8 +646,8 @@ input[type=radio] {
         display: flex;
         position: absolute;
         right: 10px;
-        top: 10px;
-        block-size: 60px;
+        top: 12px;
+        block-size: 50px;
         font-weight: bold;
         margin-top: 0px;
         padding: 7px 9px;

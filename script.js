@@ -17,6 +17,7 @@ function closeNav() {
 
 // partie de gaëtan
 const competencePersonnage = [
+
     { //index=0
         nameCompetence: "Fusion",
         competence:
@@ -151,6 +152,7 @@ const arene = [
         capacity:
             "Le mont Paozu (パオズ山, Paozu yama) est la montagne dans laquelle vit Son Goku et son grand-père Son Gohan.",
     },
+
 ];
 function selectImg(carditem) {
     const info = document.getElementById("nameCompetence");
@@ -166,6 +168,11 @@ function selectImgCompetence(carditem) {
 }
 
 /* Partie de Sébastien*/
+const button = document.getElementById("form-button");
+button.addEventListener("click", function(event){
+ event.preventDefault()
+ alert("Bienvenue à la Dragon Team");
+});
 
 /* Partie de Charlie*/
 
@@ -177,5 +184,6 @@ document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
     alert(message);
 });
+
 
 /* Partie de Joy*/
