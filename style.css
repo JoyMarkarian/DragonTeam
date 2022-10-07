@@ -85,6 +85,8 @@ hr {
 
 #textarea textarea {
     border-radius: 1.5em;
+    font-family: 'Noto Sans', sans-serif;
+
 }
 
 .form-input {
@@ -419,7 +421,7 @@ input[type=radio] {
 
 #namePersonnage {
     /* width: 100%; */
-    background-color: #a18cf280;
+    background-color: rgba(7, 32, 131, 0.31);
     padding: 2rem 7.1rem 0.6rem;
 }
 
@@ -484,9 +486,9 @@ input[type=radio] {
     margin: 0;
 }
 
-#msgPersonnage {
-    margin-bottom: 40px;
-}
+/* #msgPersonnage {
+    margin-bottom: 40px; */
+/* } */
 
 
 /*partie de Charlie*/
@@ -611,8 +613,8 @@ ul {
         display: flex;
         position: absolute;
         right: 10px;
-        top: 10px;
-        block-size: 60px;
+        top: 12px;
+        block-size: 50px;
         font-weight: bold;
         margin-top: 0px;
         padding: 7px 9px;
