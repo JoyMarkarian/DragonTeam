@@ -40,9 +40,6 @@ a:active {
     text-decoration: none;
 }
 
-hr {
-    border: 1px solid #E59982;
-}
 
 
 
@@ -55,11 +52,7 @@ hr {
     justify-content: center;
     align-items: center;
     border: solid 2px #FEC3A3;
-}
-
-@media screen and (min-width: 768px) {}
-
-
+    
 #form {
     width: 75%;
     margin: 20px 0 40px 0;
@@ -143,24 +136,8 @@ textarea {
     transition: opacity 15s ease-in-out;
 }
 
-/* @media only screen and (max-width: 480px) {
+@media screen and (max-width: 1500px) {
 
-    /*Form */
-/* .form-input-grid {  */
-/* grid-template-columns: 1fr 1fr; */
-/* grid-template-rows: 1fr 1fr; */
-/* grid-column-gap: 0; 
-     } */
-
-    /* Form */
-    .form-input-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 0;
-    }
-
-
-@media screen and (max-width: 767px) {
 
     /* partie de Sylvain*/
     nav h1 {
@@ -498,8 +475,10 @@ input[type=radio] {
 }
 
 /* .photo {
-    height: 100%;
-} */
+    width: 100%;
+    /* height: 100%;
+ } */
+ 
 
 #charactGohan {
     width: 100%;
@@ -685,5 +664,10 @@ input[type=radio] {
     #namePersonnage {
         padding: 2rem 30rem 0.6rem;
 
+    }
+    .header-picture {
+        object-fit: cover;
+        width: 100%;
+        height: 600px;
     }
 }
