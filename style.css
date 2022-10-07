@@ -49,17 +49,15 @@ hr {
 /* @media screen and (max-width: 768px) { */
 /**partie de Sebastien*/
 
- .form-wrapper {
+.form-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: solid 2px #FEC3A3;
-} 
-@media screen and (min-width: 768px) {
-   
-    
-    }
+}
+
+@media screen and (min-width: 768px) {}
 
 
 #form {
@@ -83,13 +81,13 @@ hr {
 
 .form-input-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 1em;
 }
 
 .form-input-max {
     margin: 1.5em 0;
-  
+
 }
 
 #textarea textarea {
@@ -148,12 +146,11 @@ textarea {
 /* @media only screen and (max-width: 480px) {
 
     /*Form */
-     /* .form-input-grid {  */
-         /* grid-template-columns: 1fr 1fr; */
-        /* grid-template-rows: 1fr 1fr; */
-        /* grid-column-gap: 0; 
+/* .form-input-grid {  */
+/* grid-template-columns: 1fr 1fr; */
+/* grid-template-rows: 1fr 1fr; */
+/* grid-column-gap: 0; 
      } */
-
 
     /* Form */
     .form-input-grid {
@@ -161,6 +158,7 @@ textarea {
         grid-template-rows: 1fr 1fr;
         grid-column-gap: 0;
     }
+
 
 @media screen and (max-width: 767px) {
 
@@ -674,10 +672,14 @@ input[type=radio] {
 
     #carousselPersonnage {
         margin: auto;
-        width: 800px;
+        width: 1000px;
+        height: 600px;
         justify-content: center;
         align-items: center;
+    }
 
+    .cards {
+        height: 600px;
     }
 
     #namePersonnage {
